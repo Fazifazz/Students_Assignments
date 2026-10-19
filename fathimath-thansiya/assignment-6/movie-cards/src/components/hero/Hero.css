@@ -1,0 +1,141 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: min(85vh, 720px);
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 4vw 8vh;
+  background-color: #0a0a0a;
+  color: var(--text-strong);
+  overflow: hidden;
+}
+
+.hero__backdrop {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-color: #0a0a0a;
+}
+
+.hero__backdrop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero__gradient {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      77deg,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.5) 45%,
+      rgba(0, 0, 0, 0.1) 80%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(20, 20, 20, 0.65) 0%,
+      rgba(20, 20, 20, 0) 30%,
+      rgba(20, 20, 20, 0) 70%,
+      var(--bg-deep) 100%
+    );
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: hero-fade 0.8s ease;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+.hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.hero__rating-badge {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  border-radius: 4px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  transition: background 0.15s ease, transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.hero__btn--watch {
+  background: var(--accent);
+  color: var(--text-strong);
+  box-shadow: 0 12px 24px -10px var(--accent-glow);
+}
+
+.hero__btn--watch:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+@keyframes hero-fade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 0 5vw 7vh;
+    height: 70vh;
+    min-height: 420px;
+  }
+
+  .hero__btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}

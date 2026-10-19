@@ -14,7 +14,7 @@ export default function WatchList({ movies, onRemove }) {
   }
 
   return (
-    <section className="watchlist">
+    <section className="watchlist" id="watchlist">
       <h2 className="watchlist__heading">My Watchlist ({movies.length})</h2>
       <ul className="watchlist__list">
         {movies.map((movie) => (
