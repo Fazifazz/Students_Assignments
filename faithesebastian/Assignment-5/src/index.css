@@ -1,0 +1,56 @@
+:root {
+  font-family: 'DM Sans', 'Avenir Next', Avenir, sans-serif;
+  color: #282c3f;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --ink: #282c3f;
+  --muted: #686b78;
+  --tomato: #fc8019;
+  --sage: #edf1f7;
+  --line: #e9e9eb;
+  --turmeric: #fff0e3;
+  --leaf: #146b45;
+  --lagoon: #d9f1e4;
+  --rose: #fff0e3;
+  --serif: 'DM Sans', 'Avenir Next', Avenir, sans-serif;
+  --sans: 'DM Sans', 'Avenir Next', Avenir, sans-serif;
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--tomato);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #ffe1c7;
+  color: var(--ink);
+}
