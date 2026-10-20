@@ -3,8 +3,8 @@ import useRecipes from "../hooks/useRecipes";
 import RecipeCard from "../components/RecipeCard";
 
 function Recipes({ favourites, toggleFavourite }) {
-  const [input, setInput] = useState("");   // controlled input
-  const [query, setQuery] = useState("");   // submitted query
+  const [input, setInput] = useState("");   
+  const [query, setQuery] = useState("");   
   const { data, loading, error } = useRecipes(query);
 
   const handleSubmit = (e) => {

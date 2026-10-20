@@ -9,7 +9,7 @@ function RecipeDetail() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    let ignore = false; // prevents updating state from an old request
+    let ignore = false; 
 
     const fetchRecipe = async () => {
       setLoading(true);
@@ -29,7 +29,7 @@ function RecipeDetail() {
     fetchRecipe();
 
     return () => {
-      ignore = true; // cleanup when id changes or component unmounts
+      ignore = true; 
     };
   }, [id]);
 
@@ -37,7 +37,7 @@ function RecipeDetail() {
   if (error) return <p className="error">{error}</p>;
   if (!recipe) return <p>Recipe not found.</p>;
 
-  // collect ingredients 1..20
+  
   const ingredients = [];
   for (let i = 1; i <= 20; i++) {
     const ing = recipe[`strIngredient${i}`];
