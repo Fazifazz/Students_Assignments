@@ -1,12 +1,22 @@
 import "./MovieCard.css";
 
 export default function MovieCard({ movie, inWatchlist, onAdd }) {
-  const { title, year, rating } = movie;
+  const { title, year, rating, poster } = movie;
   const buttonLabel = inWatchlist ? "Added" : "Add to Watchlist";
   const handleClick = inWatchlist ? undefined : () => onAdd(movie);
 
   return (
     <article className="movie-card">
+      {poster ? (
+        <img
+          className="movie-card__poster"
+          src={poster}
+          alt={`${title} poster`}
+          loading="lazy"
+        />
+      ) : (
+        <div className="movie-card__poster movie-card__poster--placeholder" aria-hidden="true" />
+      )}
       <h3 className="movie-card__title">{title}</h3>
       <dl className="movie-card__meta">
         <div className="movie-card__row">
@@ -20,7 +30,9 @@ export default function MovieCard({ movie, inWatchlist, onAdd }) {
         <div className="movie-card__row">
           <dt>Rating</dt>
           <dd>
-            <span className="movie-card__rating">{rating.toFixed(1)}</span>
+            <span className="movie-card__rating">
+              {typeof rating === "number" ? rating.toFixed(1) : "—"}
+            </span>
           </dd>
         </div>
       </dl>
