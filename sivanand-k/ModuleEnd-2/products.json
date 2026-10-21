@@ -1,0 +1,112 @@
+
+[
+    {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "category": "Electronics",
+        "price": 1799,
+        "originalPrice": 2499,
+        "rating": 4.8,
+        "imageUrl": "images/wirelessheadphone.png"
+    },
+    {
+        "id": 2,
+        "name": "Smart Watch",
+        "category": "Electronics",
+        "price": 2799,
+        "originalPrice": 3999,
+        "rating": 4.7,
+        "imageUrl": "images/smartwatch.png"
+    },
+    {
+        "id": 3,
+        "name": "Running Shoes",
+        "category": "Footwear",
+        "price": 1999,
+        "originalPrice": 2999,
+        "rating": 4.5,
+        "imageUrl": "images/runningshoes.png"
+    },
+    {
+        "id": 4,
+        "name": "Leather Handbag",
+        "category": "Clothing",
+        "price": 2399,
+        "originalPrice": 3499,
+        "rating": 4.9,
+        "imageUrl": "images/leatherhandbag.png"
+    },
+    {
+        "id": 5,
+        "name": "Classic Sunglasses",
+        "category": "Clothing",
+        "price": 899,
+        "originalPrice": 1499,
+        "rating": 4.4,
+        "imageUrl": "images/classicsunglass.png"
+    },
+    {
+        "id": 6,
+        "name": "Everyday Backpack",
+        "category": "Clothing",
+        "price": 1299,
+        "originalPrice": 1999,
+        "rating": 4.6,
+        "imageUrl": "images/backpack.png"
+    },
+    {
+        "id": 7,
+        "name": "Bluetooth Headphones",
+        "category": "Electronics",
+        "price": 1499,
+        "originalPrice": 2199,
+        "rating": 4.5,
+        "imageUrl": "images/wirelessheadphone.png"
+    },
+    {
+        "id": 8,
+        "name": "Fitness Smart Watch",
+        "category": "Electronics",
+        "price": 2299,
+        "originalPrice": 3299,
+        "rating": 4.6,
+        "imageUrl": "images/smartwatch.png"
+    },
+    {
+        "id": 9,
+        "name": "Casual Running Shoes",
+        "category": "Footwear",
+        "price": 1799,
+        "originalPrice": 2599,
+        "rating": 4.4,
+        "imageUrl": "images/runningshoes.png"
+    },
+    {
+        "id": 10,
+        "name": "Fashion Handbag",
+        "category": "Clothing",
+        "price": 1999,
+        "originalPrice": 2999,
+        "rating": 4.7,
+        "imageUrl": "images/leatherhandbag.png"
+    },
+    {
+        "id": 11,
+        "name": "Premium Sunglasses",
+        "category": "Clothing",
+        "price": 999,
+        "originalPrice": 1599,
+        "rating": 4.5,
+        "imageUrl": "images/classicsunglass.png"
+    },
+    {
+        "id": 12,
+        "name": "Travel Backpack",
+        "category": "Books",
+        "price": 1199,
+        "originalPrice": 1899,
+        "rating": 4.6,
+        "imageUrl": "images/backpack.png"
+    }
+]
+
