@@ -1,4 +1,10 @@
-import { createContext, useCallback, useMemo, useState } from "react";
+import {
+  createContext,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 
 export const FavouritesContext = createContext({
   favourites: [],
@@ -8,7 +14,15 @@ export const FavouritesContext = createContext({
 });
 
 export function FavouritesProvider({ children }) {
-  const [favourites, setFavourites] = useState([]);
+  const [favourites, setFavourites] = useState(() => {
+    const saved = localStorage.getItem("favourites");
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  // Save favourites whenever they change
+  useEffect(() => {
+    localStorage.setItem("favourites", JSON.stringify(favourites));
+  }, [favourites]);
 
   const addFavourite = useCallback((recipe) => {
     setFavourites((prev) => {
