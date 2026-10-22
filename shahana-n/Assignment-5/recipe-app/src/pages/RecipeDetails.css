@@ -1,0 +1,79 @@
+.recipe-detail {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 4% 50px;
+  box-sizing: border-box;
+}
+
+
+.recipe-detail h1 {
+  margin: 0 0 25px;
+  font-size: 38px;
+  color: #2b211d;
+}
+
+.detail-image {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 20px 0;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.recipe-detail h2 {
+  margin-top: 30px;
+  color: #2b211d;
+}
+
+.recipe-detail ul {
+  padding-left: 25px;
+  line-height: 1.9;
+}
+
+.instructions {
+  line-height: 1.9;
+  white-space: pre-line;
+}
+
+.recipe-video {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #ff8a3d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.recipe-video:hover {
+  background-color: #e96f25;
+}
+
+/* Go Back button */
+.back-btn {
+  display: inline-block;
+  margin: 0 0 20px;
+  padding: 10px 16px;
+  background-color: #ff8a3d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #e96f25;
+}
+
+/* Saved button - grey and disabled */
+.recipe-detail button:disabled {
+  background-color: #9e9e9e !important;
+  color: white !important;
+  cursor: not-allowed;
+  opacity: 1;
+}

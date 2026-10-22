@@ -1,0 +1,178 @@
+
+.home-page {
+  width: 100%;
+  padding: 0 0 50px;
+}
+
+/* Hero background */
+.home-hero {
+  width: 100%;
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  padding: 50px 7%;
+  margin: 0 0 45px;
+  border-radius: 0;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(43, 33, 29, 0.78),
+      rgba(43, 33, 29, 0.15)
+    ),
+    url('/images/hero.png');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+/* Welcome label */
+.hero-label {
+  color: #ff9a52;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+/* Main heading */
+.hero-content h1 {
+  color: #fffaf5;
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+/* Description text */
+.hero-description,
+.hero-content > p:not(.hero-label) {
+  color: #fffaf5;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* Hero and View All buttons */
+.hero-button,
+.view-all-button {
+  display: inline-block;
+  padding: 13px 22px;
+  margin-top: 15px;
+  border-radius: 8px;
+  background: #ff8a3d;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.hero-button:hover,
+.view-all-button:hover {
+  background: #e96f25;
+}
+
+/* Explore Recipes section */
+.popular-recipes {
+  padding: 0 6%;
+  text-align: center;
+}
+
+.popular-recipes h2 {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  color: #2b211d;
+  margin-bottom: 5px;
+}
+
+.section-description {
+  color: #76665d;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.popular-recipes .recipe-grid {
+  text-align: left;
+}
+
+.view-all-button {
+  margin-top: 35px;
+}
+
+/* Loading spinner */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 25px;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #f0e5dc;
+  border-top-color: #ff8a3d;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  color: #c62828;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .home-hero {
+    min-height: 380px;
+    padding: 40px 6%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .home-hero {
+    min-height: 320px;
+    padding: 30px 22px;
+    margin: 0 0 35px;
+    background-position: center;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-description,
+  .hero-content > p:not(.hero-label) {
+    font-size: 15px;
+  }
+
+  .popular-recipes {
+    padding: 0 4%;
+  }
+
+  .popular-recipes h2 {
+    font-size: 28px;
+  }
+}
+
+/* Saved button - grey disabled style */
+.recipe-card button:disabled,
+.recipe-detail button:disabled {
+  background-color: #9e9e9e !important;
+  color: #ffffff !important;
+  border: none !important;
+  cursor: not-allowed;
+  opacity: 1;
+}
