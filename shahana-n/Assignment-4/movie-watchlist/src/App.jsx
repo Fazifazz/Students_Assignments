@@ -119,7 +119,7 @@ function App() {
 
           <div>
             <h1>MovieFlix</h1>
-            <small>Watch. Discover. Enjoy.</small>
+            
           </div>
         </div>
 
