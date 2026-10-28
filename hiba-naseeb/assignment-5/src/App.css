@@ -1,0 +1,126 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #10131c;
+  color: #ffffff;
+}
+
+.app {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #facc15;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #e5e7eb;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #374151;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+button:disabled {
+  background: #15803d;
+  cursor: not-allowed;
+}
+
+.filters .active {
+  background: #facc15;
+  color: #111827;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 20px 0 35px;
+}
+
+.movie-card {
+  padding: 22px;
+  border: 1px solid #374151;
+  border-radius: 14px;
+  background: #1f2937;
+  box-shadow: 0 5px 15px #00000030;
+}
+
+.movie-card h3 {
+  color: #facc15;
+  font-size: 21px;
+}
+
+.movie-card p {
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+.movie-card button {
+  width: 100%;
+  margin-top: 10px;
+  background: #4f46e5;
+}
+
+.movie-card button:disabled {
+  background: #15803d;
+}
+
+.watch-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 14px;
+  margin: 10px 0;
+  background: #1f2937;
+  border-radius: 8px;
+}
+
+.watch-item button {
+  background: #dc2626;
+}
+
+.loading {
+  text-align: center;
+  padding: 30px;
+  color: #facc15;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 20px 12px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
