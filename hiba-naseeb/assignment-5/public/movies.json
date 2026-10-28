@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "genre": "Action",
+    "year": 2010,
+    "rating": 8.8
+  },
+  {
+    "id": 2,
+    "title": "Interstellar",
+    "genre": "Drama",
+    "year": 2014,
+    "rating": 8.7
+  },
+  {
+    "id": 3,
+    "title": "The Dark Knight",
+    "genre": "Action",
+    "year": 2008,
+    "rating": 9.0
+  },
+  {
+    "id": 4,
+    "title": "Home Alone",
+    "genre": "Comedy",
+    "year": 1990,
+    "rating": 7.7
+  },
+  {
+    "id": 5,
+    "title": "The Pursuit of Happyness",
+    "genre": "Drama",
+    "year": 2006,
+    "rating": 8.0
+  }
+]
