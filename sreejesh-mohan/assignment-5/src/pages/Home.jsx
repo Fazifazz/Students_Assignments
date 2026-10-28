@@ -57,14 +57,16 @@ export default function Home() {
 
           {/* Quick Hero Search Form */}
           <form onSubmit={handleQuickSearch} className="hero-search-form">
-            <Search size={18} className="hero-search-icon" />
-            <input
-              type="text"
-              value={quickQuery}
-              onChange={(e) => setQuickQuery(e.target.value)}
-              placeholder="Search Kerala dishes & Indian snacks (e.g. Samosa, Parippu Vada, Biryani, Meen Curry)..."
-              className="hero-search-input"
-            />
+            <div className="hero-search-input-wrap">
+              <Search size={18} className="hero-search-icon" />
+              <input
+                type="text"
+                value={quickQuery}
+                onChange={(e) => setQuickQuery(e.target.value)}
+                placeholder="Search Kerala dishes & Indian snacks..."
+                className="hero-search-input"
+              />
+            </div>
             <button type="submit" className="btn btn-primary hero-search-btn">
               <span>Search Recipes</span>
             </button>
