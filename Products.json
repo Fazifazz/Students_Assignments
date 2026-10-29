@@ -1,0 +1,14 @@
+[
+  {"id":1,"name":"Wireless Headphones","category":"Electronics","price":1499,"originalPrice":1999,"rating":4.5,"imageUrl":"https://placehold.co/300x200?text=Headphones"},
+  {"id":2,"name":"Smart Watch","category":"Electronics","price":1999,"originalPrice":2499,"rating":4.3,"imageUrl":"https://placehold.co/300x200?text=Smart+Watch"},
+  {"id":3,"name":"Bluetooth Speaker","category":"Electronics","price":999,"originalPrice":1299,"rating":4.2,"imageUrl":"https://placehold.co/300x200?text=Speaker"},
+  {"id":4,"name":"Wireless Mouse","category":"Electronics","price":499,"originalPrice":699,"rating":4.1,"imageUrl":"https://placehold.co/300x200?text=Mouse"},
+  {"id":5,"name":"Cotton T-Shirt","category":"Clothing","price":499,"originalPrice":799,"rating":4.4,"imageUrl":"https://placehold.co/300x200?text=T-Shirt"},
+  {"id":6,"name":"Casual Shirt","category":"Clothing","price":899,"originalPrice":1199,"rating":4.3,"imageUrl":"https://placehold.co/300x200?text=Shirt"},
+  {"id":7,"name":"Denim Jeans","category":"Clothing","price":1299,"originalPrice":1599,"rating":4.5,"imageUrl":"https://placehold.co/300x200?text=Jeans"},
+  {"id":8,"name":"Running Shoes","category":"Footwear","price":1799,"originalPrice":2299,"rating":4.6,"imageUrl":"https://placehold.co/300x200?text=Shoes"},
+  {"id":9,"name":"Casual Sneakers","category":"Footwear","price":1499,"originalPrice":1999,"rating":4.2,"imageUrl":"https://placehold.co/300x200?text=Sneakers"},
+  {"id":10,"name":"Web Design Book","category":"Books","price":599,"originalPrice":799,"rating":4.7,"imageUrl":"https://placehold.co/300x200?text=Web+Design"},
+  {"id":11,"name":"JavaScript Guide","category":"Books","price":699,"originalPrice":899,"rating":4.8,"imageUrl":"https://placehold.co/300x200?text=JavaScript"},
+  {"id":12,"name":"CSS Handbook","category":"Books","price":449,"originalPrice":599,"rating":4.4,"imageUrl":"https://placehold.co/300x200?text=CSS"}
+]
