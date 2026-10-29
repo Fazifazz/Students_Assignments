@@ -1,0 +1,16 @@
+import { configureStore } from '@reduxjs/toolkit';
+import authReducer from '../features/auth/authSlice';
+import contactReducer from '../features/contacts/contactSlice';
+import chatReducer from '../features/chats/chatSlice';
+import messageReducer from '../features/messages/messageSlice';
+
+const store = configureStore({
+  reducer: {
+    auth: authReducer,
+    contacts: contactReducer,
+    chat: chatReducer,
+    messages: messageReducer,
+  },
+});
+
+export default store;
