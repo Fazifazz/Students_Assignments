@@ -1,0 +1,431 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "category": "Electronics",
+      "price": 599,
+      "originalPrice": 899,
+      "rating": 4.5,
+      "reviews": 1288,
+      "imageUrl": "images/electronics.jpg",
+      "description": "Sample over-ear wireless headphones designed for everyday listening, calls, and travel. Their padded fit and foldable style make them easy to carry.",
+      "brand": "SampleTone",
+
+      "stock": 24,
+      "reviewCount": 1288,
+      "images": ["images/electronics.jpg"],
+      "features": [
+        "Sample wireless audio connection",
+        "Sample padded over-ear design",
+        "Sample foldable construction"
+      ],
+      "specifications": {
+        "model": "Sample over-ear wireless headphones",
+        "display": "Not applicable",
+        "processor": "Not applicable",
+        "ram": "Not applicable",
+        "storage": "Not applicable",
+        "battery": "Sample rechargeable battery; capacity not specified",
+        "connectivity": "Sample Bluetooth connection; version not specified"
+      },
+      "highlights": [
+        "Designed for music and calls",
+        "Portable foldable style",
+        "Sample product information"
+      ],
+      "warranty": "Sample data: warranty terms not provided; confirm with the seller.",
+      "deliveryInfo": "Sample data: delivery estimate to be confirmed at checkout.",
+      "returnPolicy": "Sample data: return window and eligibility to be confirmed with the seller."
+    },
+    {
+      "id": 2,
+      "name": "Classic Cotton T-Shirt",
+      "category": "Clothing",
+      "price": 499,
+      "originalPrice": 799,
+      "rating": 4,
+      "reviews": 4288,
+      "imageUrl": "images/cloth.jpg",
+      "description": "A classic cotton T-shirt for casual everyday wear. The simple silhouette is easy to pair with jeans, shorts, or layered outfits.",
+      "brand": "SampleThread",
+      "stock": 38,
+      "reviewCount": 4288,
+      "images": ["images/cloth.jpg"],
+      "features": [
+        "Sample cotton fabric",
+        "Classic short-sleeve silhouette",
+        "Suitable for casual outfits"
+      ],
+      "specifications": {
+        "material": "Sample cotton; composition not independently verified",
+        "size": "Sample size range; confirm available sizes",
+        "color": "Sample color shown in product image",
+        "fit": "Sample regular fit",
+        "careInstructions": "Sample care guidance: follow the garment label"
+      },
+      "highlights": [
+        "Everyday wardrobe staple",
+        "Easy-to-style design",
+        "Sample product information"
+      ],
+      "warranty": "Sample data: warranty terms not provided; confirm with the seller.",
+      "deliveryInfo": "Sample data: delivery estimate to be confirmed at checkout.",
+      "returnPolicy": "Sample data: return window and eligibility to be confirmed with the seller."
+    },
+    {
+      "id": 3,
+      "name": "Everyday Running Shoes",
+      "category": "Footwear",
+      "price": 1999,
+      "originalPrice": 3999,
+      "rating": 5,
+      "reviews": 548,
+      "imageUrl": "images/footware.jpg",
+      "description": "Everyday running shoes with a lightweight profile for walking, workouts, and casual use. Check the size guide before ordering for a comfortable fit.",
+      "brand": "SampleStride",
+      "stock": 17,
+      "reviewCount": 548,
+      "images": ["images/footware.jpg"],
+      "features": [
+        "Sample lightweight upper",
+        "Cushioned sample insole",
+        "Lace-up closure"
+      ],
+      "specifications": {
+        "material": "Sample mesh and synthetic upper",
+        "size": "Sample size range; confirm available sizes",
+        "color": "Sample color shown in product image",
+        "soleType": "Sample rubber outsole",
+        "closure": "Lace-up"
+      },
+      "highlights": [
+        "For running and everyday wear",
+        "Lace-up adjustable fit",
+        "Sample product information"
+      ],
+      "warranty": "Sample data: warranty terms not provided; confirm with the seller.",
+      "deliveryInfo": "Sample data: delivery estimate to be confirmed at checkout.",
+      "returnPolicy": "Sample data: return window and eligibility to be confirmed with the seller."
+    },
+    {
+      "id": 4,
+      "name": "The Creative Mind",
+      "category": "Books",
+      "price": 399,
+      "originalPrice": 499,
+      "rating": 4.5,
+      "reviews": 7985,
+      "imageUrl": "images/books.jpg",
+      "description": "The Creative Mind is a sample title for readers interested in creativity, idea development, and practical approaches to creative work.",
+      "brand": "SamplePage Press",
+      "stock": 31,
+      "reviewCount": 7985,
+      "images": ["images/books.jpg"],
+      "features": [
+        "Sample paperback edition",
+        "Creativity-focused subject",
+        "Suitable for personal reading or gifting"
+      ],
+      "specifications": {
+        "author": "Sample author; exact attribution not provided",
+        "publisher": "Sample publisher; publication details not provided",
+        "language": "Sample language: English",
+        "pages": "Sample page count not provided",
+        "isbn": "Sample ISBN not assigned"
+      },
+      "highlights": [
+        "Explores creative thinking",
+        "Book-format product",
+        "Sample bibliographic information"
+      ],
+      "warranty": "Not applicable to this sample book listing.",
+      "deliveryInfo": "Sample data: delivery estimate to be confirmed at checkout.",
+      "returnPolicy": "Sample data: return window and eligibility to be confirmed with the seller."
+    },
+    {
+      "id": 5,
+      "name": "Daily Care Set",
+      "category": "Beauty",
+      "price": 799,
+      "originalPrice": 999,
+      "rating": 4,
+      "reviews": 56848,
+      "imageUrl": "images/beauty_care.jpg",
+      "description": "A sample daily beauty-care set for a simple personal-care routine. Review the actual packaging and ingredient information before use.",
+      "brand": "SampleGlow",
+      "stock": 22,
+      "reviewCount": 56848,
+      "images": ["images/beauty_care.jpg"],
+      "features": [
+        "Sample multi-item care set",
+        "For a daily personal-care routine",
+        "Check package labels for ingredients and directions"
+      ],
+      "specifications": {
+        "productType": "Sample beauty-care set",
+        "contents": "Sample set contents; confirm from package",
+        "skinType": "Not specified; check product packaging",
+        "ingredients": "Not provided; check product packaging",
+        "usage": "Follow directions on the product packaging"
+      },
+      "highlights": [
+        "Personal-care set format",
+        "Review ingredients before use",
+        "Sample product information"
+      ],
+      "warranty": "Not applicable to this sample personal-care listing.",
+      "deliveryInfo": "Sample data: delivery estimate to be confirmed at checkout.",
+      "returnPolicy": "Sample data: return window and eligibility to be confirmed with the seller."
+    },
+    {
+      "id": 6,
+      "name": "Smart Watch",
+      "category": "Accessories",
+      "price": 999,
+      "originalPrice": 1499,
+      "rating": 4.5,
+      "reviews": 1958,
+      "imageUrl": "images/smartwatch.jpg",
+      "description": "A sample smartwatch-style accessory for checking the time and exploring everyday wearable features. Confirm device compatibility and specifications before purchase.",
+      "brand": "SamplePulse",
+      "stock": 19,
+      "reviewCount": 1958,
+      "images": ["images/smartwatch.jpg"],
+      "features": [
+        "Sample wearable watch design",
+        "Sample activity and notification features",
+        "Confirm phone compatibility before purchase"
+      ],
+      "specifications": {
+        "model": "Sample smartwatch-style accessory",
+        "display": "Sample digital display; size and panel type not specified",
+        "processor": "Not specified",
+        "ram": "Not specified",
+        "storage": "Not specified",
+        "battery": "Sample rechargeable battery; capacity not specified",
+        "connectivity": "Sample Bluetooth connectivity; version not specified"
+      },
+      "highlights": [
+        "Wearable accessory format",
+        "Compatibility details require confirmation",
+        "Sample product information"
+      ],
+      "warranty": "Sample data: warranty terms not provided; confirm with the seller.",
+      "deliveryInfo": "Sample data: delivery estimate to be confirmed at checkout.",
+      "returnPolicy": "Sample data: return window and eligibility to be confirmed with the seller."
+    },
+    {
+      "id": 7,
+      "name": "Bluetooth Speaker",
+      "category": "Electronics",
+      "price": 1299,
+      "originalPrice": 1799,
+      "rating": 4.5,
+      "reviews": 3568,
+      "imageUrl": "images/bl-speaker.jpg",
+      "description": "A compact Bluetooth speaker for listening to audio at home or on the go. Confirm its supported connections and battery details with the seller.",
+      "brand": "SampleTone",
+      "stock": 26,
+      "reviewCount": 3568,
+      "images": ["images/bl-speaker.jpg"],
+      "features": [
+        "Sample portable speaker design",
+        "Sample wireless audio playback",
+        "Suitable for personal listening"
+      ],
+      "specifications": {
+        "model": "Sample portable Bluetooth speaker",
+        "display": "Not specified",
+        "processor": "Not applicable",
+        "ram": "Not applicable",
+        "storage": "Not applicable",
+        "battery": "Sample rechargeable battery; capacity not specified",
+        "connectivity": "Sample Bluetooth connection; version and wired inputs not specified"
+      },
+      "highlights": [
+        "Portable audio format",
+        "Wireless listening use",
+        "Sample product information"
+      ],
+      "warranty": "Sample data: warranty terms not provided; confirm with the seller.",
+      "deliveryInfo": "Sample data: delivery estimate to be confirmed at checkout.",
+      "returnPolicy": "Sample data: return window and eligibility to be confirmed with the seller."
+    },
+    {
+      "id": 8,
+      "name": "Denim Jacket",
+      "category": "Clothing",
+      "price": 1499,
+      "originalPrice": 2499,
+      "rating": 4,
+      "reviews": 4578,
+      "imageUrl": "images/jacket.jpg",
+      "description": "A denim jacket with a classic casual look, suitable for layering over everyday outfits. Check the size guide and garment label for fit and care details.",
+      "brand": "SampleThread",
+      "stock": 14,
+      "reviewCount": 4578,
+      "images": ["images/jacket.jpg"],
+      "features": [
+        "Sample denim-style fabric",
+        "Layer-friendly jacket design",
+        "Front closure; exact type to be confirmed"
+      ],
+      "specifications": {
+        "material": "Sample denim fabric; composition not independently verified",
+        "size": "Sample size range; confirm available sizes",
+        "color": "Sample color shown in product image",
+        "fit": "Sample regular fit",
+        "careInstructions": "Sample care guidance: follow the garment label"
+      },
+      "highlights": [
+        "Classic casual outerwear",
+        "Suitable for layering",
+        "Sample product information"
+      ],
+      "warranty": "Sample data: warranty terms not provided; confirm with the seller.",
+      "deliveryInfo": "Sample data: delivery estimate to be confirmed at checkout.",
+      "returnPolicy": "Sample data: return window and eligibility to be confirmed with the seller."
+    },
+    {
+      "id": 9,
+      "name": "Casual Sneakers",
+      "category": "Footwear",
+      "price": 1599,
+      "originalPrice": 2999,
+      "rating": 4.5,
+      "reviews": 4698,
+      "imageUrl": "images/sneakers.jpg",
+      "description": "Casual sneakers designed for daily outfits and comfortable day-to-day wear. Use the size guide to choose a suitable fit.",
+      "brand": "SampleStride",
+      "stock": 28,
+      "reviewCount": 4698,
+      "images": ["images/sneakers.jpg"],
+      "features": [
+        "Sample casual sneaker silhouette",
+        "Lace-up closure",
+        "Sample cushioned footbed"
+      ],
+      "specifications": {
+        "material": "Sample synthetic and textile upper",
+        "size": "Sample size range; confirm available sizes",
+        "color": "Sample color shown in product image",
+        "soleType": "Sample rubber outsole",
+        "closure": "Lace-up"
+      },
+      "highlights": [
+        "Everyday casual footwear",
+        "Adjustable lace-up fit",
+        "Sample product information"
+      ],
+      "warranty": "Sample data: warranty terms not provided; confirm with the seller.",
+      "deliveryInfo": "Sample data: delivery estimate to be confirmed at checkout.",
+      "returnPolicy": "Sample data: return window and eligibility to be confirmed with the seller."
+    },
+    {
+      "id": 10,
+      "name": "The Art of Learning",
+      "category": "Books",
+      "price": 449,
+      "originalPrice": 599,
+      "rating": 4.5,
+      "reviews": 3569,
+      "imageUrl": "images/learning-book.jpg",
+      "description": "The Art of Learning is a sample book title for readers exploring study habits, skill development, and ways to approach lifelong learning.",
+      "brand": "SamplePage Press",
+      "stock": 35,
+      "reviewCount": 3569,
+      "images": ["images/learning-book.jpg"],
+      "features": [
+        "Sample paperback edition",
+        "Learning and study-focused subject",
+        "Suitable for personal reading or gifting"
+      ],
+      "specifications": {
+        "author": "Sample author; exact attribution not provided",
+        "publisher": "Sample publisher; publication details not provided",
+        "language": "Sample language: English",
+        "pages": "Sample page count not provided",
+        "isbn": "Sample ISBN not assigned"
+      },
+      "highlights": [
+        "Explores learning and skill development",
+        "Book-format product",
+        "Sample bibliographic information"
+      ],
+      "warranty": "Not applicable to this sample book listing.",
+      "deliveryInfo": "Sample data: delivery estimate to be confirmed at checkout.",
+      "returnPolicy": "Sample data: return window and eligibility to be confirmed with the seller."
+    },
+    {
+      "id": 11,
+      "name": "Hydrating Face Cream",
+      "category": "Beauty",
+      "price": 549,
+      "originalPrice": 749,
+      "rating": 4,
+      "reviews": 1145,
+      "imageUrl": "images/face-cream.jpg",
+      "description": "A sample hydrating face cream for a personal skincare routine. Check the ingredient list, directions, and suitability information on the package before use.",
+      "brand": "SampleGlow",
+      "stock": 20,
+      "reviewCount": 1145,
+      "images": ["images/face-cream.jpg"],
+      "features": [
+        "Sample facial moisturizer",
+        "For a skincare routine",
+        "Check package labels for ingredients and directions"
+      ],
+      "specifications": {
+        "productType": "Sample face cream",
+        "netContents": "Not specified; check product packaging",
+        "skinType": "Not specified; check product packaging",
+        "ingredients": "Not provided; check product packaging",
+        "usage": "Follow directions on the product packaging"
+      },
+      "highlights": [
+        "Facial skincare format",
+        "Review ingredients before use",
+        "Sample product information"
+      ],
+      "warranty": "Not applicable to this sample personal-care listing.",
+      "deliveryInfo": "Sample data: delivery estimate to be confirmed at checkout.",
+      "returnPolicy": "Sample data: return window and eligibility to be confirmed with the seller."
+    },
+    {
+      "id": 12,
+      "name": "Leather Wallet",
+      "category": "Accessories",
+      "price": 699,
+      "originalPrice": 999,
+      "rating": 4.5,
+      "reviews": 1897,
+      "imageUrl": "images/wallet.jpg",
+      "description": "A classic leather-style wallet for carrying everyday essentials. Confirm the material composition, dimensions, and internal layout with the seller.",
+      "brand": "SampleCarry",
+      "stock": 32,
+      "reviewCount": 1897,
+      "images": ["images/wallet.jpg"],
+      "features": [
+        "Sample leather-style exterior",
+        "Designed to carry everyday essentials",
+        "Compact wallet format"
+      ],
+      "specifications": {
+        "material": "Sample leather-style material; composition not independently verified",
+        "dimensions": "Not specified; confirm with the seller",
+        "weight": "Not specified",
+        "color": "Sample color shown in product image",
+        "usage": "Everyday storage for cards and cash"
+      },
+      "highlights": [
+        "Compact everyday accessory",
+        "Classic wallet format",
+        "Sample product information"
+      ],
+      "warranty": "Sample data: warranty terms not provided; confirm with the seller.",
+      "deliveryInfo": "Sample data: delivery estimate to be confirmed at checkout.",
+      "returnPolicy": "Sample data: return window and eligibility to be confirmed with the seller."
+    }
+  ]
+}
