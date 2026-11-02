@@ -1,19 +1,18 @@
+
 function MovieCard({ title, genre, year, rating, onAdd, isAdded }) {
   return (
-    <div className="movie-card">
+    <article className="movie-card">
+      <span className="movie-genre">{genre}</span>
+
       <h2>{title}</h2>
 
-      <p>Genre: {genre}</p>
-      <p>Year: {year}</p>
-      <p>Rating: ⭐ {rating}</p>
+      <p>Released in {year}</p>
+      <p>★ &nbsp;{rating} <span className="rating-label">/ 10</span></p>
 
-      <button
-        onClick={onAdd}
-        disabled={isAdded}
-      >
-        {isAdded ? "Added" : "Add to Watchlist"}
+      <button onClick={onAdd} disabled={isAdded}>
+        {isAdded ? "✓  In your watchlist" : "+  Add to watchlist"}
       </button>
-    </div>
+    </article>
   );
 }
 
