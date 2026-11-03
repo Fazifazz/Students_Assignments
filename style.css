@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+header {
+  background: #172554;
+  color: white;
+  padding: 25px 6%;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0 0 8px;
+}
+
+header input {
+  width: 60%;
+  max-width: 450px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #e2e8f0;
+}
+
+#cartButton {
+  background: #f59e0b;
+  color: #111827;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 25px;
+}
+
+h2 {
+  margin: 25px 0 18px;
+}
+
+#categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+#categories h2 {
+  width: 100%;
+}
+
+.category-btn.active {
+  background: #172554;
+  color: white;
+}
+
+#productContainer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 3px 12px #00000012;
+}
+
+.product-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+}
+
+.product-card h3 {
+  font-size: 17px;
+}
+
+.price {
+  font-size: 19px;
+  font-weight: bold;
+  color: #15803d;
+}
+
+.original-price {
+  color: #777;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+.product-card .add-btn {
+  background: #172554;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#cartSection {
+  margin-top: 40px;
+  padding: 20px;
+  background: #e8edf6;
+  border-radius: 12px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: white;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.cart-item button {
+  margin: 3px;
+}
+
+.remove-btn {
+  background: #dc2626;
+  color: white;
+}
+
+#noProducts {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  #productContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  #productContainer {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding: 14px;
+  }
+
+  header input {
+    width: 90%;
+  }
+}
