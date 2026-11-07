@@ -1,0 +1,460 @@
+[
+  {
+    "id": 1,
+    "name": "Sony WH-1000XM5 Wireless Noise-Cancelling Headphones",
+    "category": "Electronics",
+    "brand": "Sony",
+    "price": 26990,
+    "originalPrice": 34990,
+    "rating": 4.9,
+    "reviewsCount": 1420,
+    "stock": 18,
+    "description": "The Sony WH-1000XM5 rewrites the rules for distraction-free listening. Equipped with two processors controlling eight microphones, Auto NC Optimizer for automatically optimizing noise cancellation based on wearing conditions and environment, and a specially designed 30mm driver unit.",
+    "features": [
+      "Industry-leading Noise Cancellation with two processors and 8 microphones",
+      "Magnificent Sound engineered with the new Integrated Processor V1",
+      "Crystal-clear hands-free calling with 4 beamforming microphones",
+      "Up to 30-hour battery life with quick charging (3 min charge for 3 hours playback)",
+      "Multipoint connection allows swift pairing with two Bluetooth devices simultaneously"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Apple Watch Series 9 GPS 45mm Midnight Aluminum",
+    "category": "Electronics",
+    "brand": "Apple",
+    "price": 41900,
+    "originalPrice": 44900,
+    "rating": 4.8,
+    "reviewsCount": 980,
+    "stock": 14,
+    "description": "Smarter, brighter, and mightier. The Apple Watch Series 9 features the S9 SiP chip, enabling a magical new way to use your watch without touching the screen using Double Tap gesture. Advanced health, safety, and activity features provide powerful insights.",
+    "features": [
+      "Always-On Retina display with up to 2000 nits brightness",
+      "Groundbreaking Double Tap gesture for hands-free control",
+      "Advanced Blood Oxygen, ECG, and Temperature sensing",
+      "Crash Detection and Fall Detection with Emergency SOS",
+      "Water resistant up to 50 meters (swimproof design)"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Samsung 55\" Crystal 4K Vivid Pro Ultra HD Smart TV",
+    "category": "Electronics",
+    "brand": "Samsung",
+    "price": 43990,
+    "originalPrice": 64900,
+    "rating": 4.7,
+    "reviewsCount": 610,
+    "stock": 8,
+    "description": "Experience true-to-life color and sharp detail with PurColor, Crystal Processor 4K, and HDR. The 3-Side Bezel-less design delivers an immersive cinema experience straight into your living room.",
+    "features": [
+      "Crystal Processor 4K for realistic color scaling and contrast",
+      "Motion Xcelerator for fluid gaming and action sequences",
+      "Q-Symphony sound synchronization with compatible Samsung soundbars",
+      "Built-in Voice Assistants (Bixby, Alexa) and SmartThings hub"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=800&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Apple MacBook Air 13\" M2 Chip (256GB SSD, 8GB RAM)",
+    "category": "Electronics",
+    "brand": "Apple",
+    "price": 89900,
+    "originalPrice": 99900,
+    "rating": 4.9,
+    "reviewsCount": 2150,
+    "stock": 11,
+    "description": "Redesigned around the next-generation M2 chip, MacBook Air is strikingly thin and brings exceptional speed and power efficiency within its durable all-aluminum enclosure. An ultra-capable laptop for work, study, and play.",
+    "features": [
+      "Apple M2 chip with 8-core CPU and up to 10-core GPU",
+      "13.6-inch Liquid Retina display with over 500 nits of brightness",
+      "MagSafe 3 charging port with up to 18 hours of all-day battery life",
+      "1080p FaceTime HD camera with three-mic array and Spatial Audio"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=80"
+  },
+  {
+    "id": 5,
+    "name": "JBL Flip 6 Portable Waterproof Bluetooth Speaker",
+    "category": "Electronics",
+    "brand": "JBL",
+    "price": 9999,
+    "originalPrice": 13999,
+    "rating": 4.7,
+    "reviewsCount": 850,
+    "stock": 25,
+    "description": "The beat goes on with the JBL Flip 6 2-way speaker system, engineered to deliver loud, crystal clear, powerful sound. The racetrack-shaped woofer delivers exceptional low frequencies and midrange, while a separate tweeter produces crisp, clear high-frequencies.",
+    "features": [
+      "IP67 Waterproof and Dustproof for pool or park parties",
+      "12 hours of playtime on a single USB-C charge",
+      "PartyBoost allows pairing with multiple compatible speakers",
+      "Bold industrial audio design with durable fabric housing"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Logitech MX Master 3S Wireless Performance Mouse",
+    "category": "Electronics",
+    "brand": "Logitech",
+    "price": 8995,
+    "originalPrice": 10995,
+    "rating": 4.9,
+    "reviewsCount": 1640,
+    "stock": 20,
+    "description": "Meet MX Master 3S – an iconic mouse remastered with Quiet Clicks and an 8,000 DPI track-on-glass sensor for next-level feel, precision, and performance.",
+    "features": [
+      "Quiet Click buttons reduce click noise by 90%",
+      "8,000 DPI Darkfield sensor tracks on any surface, even glass",
+      "MagSpeed Electromagnetic scrolling shifts from line to 1,000 lines/sec",
+      "Pair with up to 3 devices across Windows, macOS, ChromeOS, and Linux"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=800&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Levi's Men's 511 Slim Fit Stretch Denim Jeans",
+    "category": "Clothing",
+    "brand": "Levi's",
+    "price": 2499,
+    "originalPrice": 3999,
+    "rating": 4.6,
+    "reviewsCount": 780,
+    "stock": 35,
+    "description": "A modern slim with room to move, the 511 Slim Fit Jeans are a classic since right now. These jeans sit below the waist with a slim leg from hip to ankle.",
+    "features": [
+      "99% cotton, 1% elastane stretch denim",
+      "Zip fly with iconic metal shank button closure",
+      "Classic 5-pocket styling with signature Arcuate stitching",
+      "Machine washable with Water<Less technology"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Nike Sportswear Club Fleece Pullover Hoodie",
+    "category": "Clothing",
+    "brand": "Nike",
+    "price": 3295,
+    "originalPrice": 4295,
+    "rating": 4.7,
+    "reviewsCount": 920,
+    "stock": 28,
+    "description": "A closet staple, the Nike Sportswear Club Fleece Hoodie combines classic style with the soft comfort of brushed-back fleece for an elevated, everyday look you can wear anywhere.",
+    "features": [
+      "Brushed-back fleece fabric feels soft and smooth against the skin",
+      "Hood with drawstring offers adjustable coverage",
+      "Ribbed hem and cuffs trap warmth and keep the hoodie in place",
+      "Kangaroo front pocket for easy item storage and hand warmth"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&q=80"
+  },
+  {
+    "id": 9,
+    "name": "Levi's Women's Original Trucker Denim Jacket",
+    "category": "Clothing",
+    "brand": "Levi's",
+    "price": 3999,
+    "originalPrice": 5499,
+    "rating": 4.8,
+    "reviewsCount": 540,
+    "stock": 18,
+    "description": "An authentic style icon since 1967. The Levi's Original Trucker Jacket features a timeless straight silhouette hitting right at the hip, dual chest flap pockets with the iconic red tab, and durable heavyweight cotton denim made to last decades.",
+    "features": [
+      "100% durable heavyweight cotton rigid denim",
+      "Point collar with branded Levi's metal shank button front closure",
+      "Dual button-flap chest pockets and side welt hand pockets",
+      "Adjustable side button tabs at back waist for customized fit"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&q=80"
+  },
+  {
+    "id": 10,
+    "name": "H&M Regular Fit Oxford Cotton Casual Shirt",
+    "category": "Clothing",
+    "brand": "H&M",
+    "price": 1499,
+    "originalPrice": 1999,
+    "rating": 4.5,
+    "reviewsCount": 460,
+    "stock": 45,
+    "description": "Shirt in washed Oxford cotton with a button-down collar, classic front placket, and open chest pocket. Long sleeves with adjustable button cuffs and rounded hem.",
+    "features": [
+      "100% breathable organic Oxford weave cotton",
+      "Button-down collar that stays crisp throughout the day",
+      "Pleat at the back for comfort and freedom of movement",
+      "Versatile styling for business casual or weekend untucked wear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&q=80"
+  },
+  {
+    "id": 11,
+    "name": "The North Face Standard Crewneck Fleece Sweatshirt",
+    "category": "Clothing",
+    "brand": "The North Face",
+    "price": 3799,
+    "originalPrice": 4999,
+    "rating": 4.7,
+    "reviewsCount": 290,
+    "stock": 22,
+    "description": "Engineered for outdoor trail exploration and urban chilling alike. High-density cotton fleece offers insulation and durable shape retention.",
+    "features": [
+      "Heavyweight thermal fleece blend with brushed interior",
+      "Embroidered The North Face half-dome chest logo",
+      "Raglan sleeves designed for unrestricted shoulder mobility",
+      "Pre-shrunk fabric to prevent post-wash shrinkage"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&q=80"
+  },
+  {
+    "id": 12,
+    "name": "Tommy Hilfiger Men's Signature Pique Polo T-Shirt",
+    "category": "Clothing",
+    "brand": "Tommy Hilfiger",
+    "price": 2899,
+    "originalPrice": 3999,
+    "rating": 4.6,
+    "reviewsCount": 510,
+    "stock": 30,
+    "description": "Crafted from pure organic cotton pique, this sporty polo shirt combines iconic preppy East Coast heritage with everyday breathable comfort.",
+    "features": [
+      "100% organic cotton breathable honeycomb pique",
+      "Two-button placket with mother-of-pearl effect buttons",
+      "Signature Tommy Hilfiger flag embroidery on the chest",
+      "Side slit vents at hem for ease of movement"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80"
+  },
+  {
+    "id": 13,
+    "name": "Nike Air Jordan 1 Low Retro Sneakers",
+    "category": "Footwear",
+    "brand": "Nike",
+    "price": 8995,
+    "originalPrice": 10995,
+    "rating": 4.9,
+    "reviewsCount": 2400,
+    "stock": 15,
+    "description": "Inspired by the 1985 original, the Air Jordan 1 Low offers a clean, classic look that's familiar yet always fresh. With an iconic design that pairs with any 'fit, these kicks ensure you'll always be on point.",
+    "features": [
+      "Encapsulated Air-Sole unit provides lightweight cushioning",
+      "Genuine leather in the upper offers durability and a premium look",
+      "Solid rubber outsole with pivot circle improves traction on diverse surfaces",
+      "Embroidered Wings logo on the heel and iconic stitched Swoosh"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=800&q=80"
+  },
+  {
+    "id": 14,
+    "name": "Adidas Originals Stan Smith Classic Leather Shoes",
+    "category": "Footwear",
+    "brand": "Adidas",
+    "price": 6599,
+    "originalPrice": 8999,
+    "rating": 4.7,
+    "reviewsCount": 1820,
+    "stock": 25,
+    "description": "More than 50 years after their debut on the tennis court, Stan Smith shoes continue their reign as an icon of minimalist streetwear culture. Crisp white upper with signature green heel tab.",
+    "features": [
+      "Premium synthetic leather upper made with Primegreen recycled materials",
+      "Perforated 3-Stripes branding for subtle style and ventilation",
+      "OrthoLite sockliner offers step-in cushioning and moisture control",
+      "Durable rubber cupsole built to last for miles"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80"
+  },
+  {
+    "id": 15,
+    "name": "Puma Velocity Nitro 3 Running Shoes",
+    "category": "Footwear",
+    "brand": "Puma",
+    "price": 7499,
+    "originalPrice": 11999,
+    "rating": 4.6,
+    "reviewsCount": 480,
+    "stock": 19,
+    "description": "Puma's premier daily trainer featuring advanced NITRO foam technology for superior responsiveness and lightweight cushioning. PUMAGRIP rubber ensures traction across roads in wet and dry conditions.",
+    "features": [
+      "NITRO foam midsole delivers explosive energy return",
+      "Engineered mesh upper for breathability and targeted support",
+      "PUMAGRIP all-surface rubber compound for maximum durability",
+      "Reflective accents for low-light morning and evening runs"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&q=80"
+  },
+  {
+    "id": 16,
+    "name": "Clarks Tilden Cap Leather Derby Formal Shoes",
+    "category": "Footwear",
+    "brand": "Clarks",
+    "price": 5499,
+    "originalPrice": 7999,
+    "rating": 4.5,
+    "reviewsCount": 610,
+    "stock": 17,
+    "description": "A smart profile crafted in glossy black full-grain leather, the Tilden Cap oxford shoe features a classic cap toe, discreet elastic stretch panels for slip-on ease, and Cushion Soft technology.",
+    "features": [
+      "100% full-grain polished calfskin leather upper",
+      "Ortholite footbed absorbs impact and wicks away moisture",
+      "Subtle side goring allows flexible movement when walking",
+      "High-grip TPR composite outsole resistant to slipping"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=800&q=80"
+  },
+  {
+    "id": 17,
+    "name": "New Balance 574 Core Classic Unisex Sneakers",
+    "category": "Footwear",
+    "brand": "New Balance",
+    "price": 7999,
+    "originalPrice": 9999,
+    "rating": 4.8,
+    "reviewsCount": 1120,
+    "stock": 14,
+    "description": "The most New Balance shoe ever says it all, right? The 574 was built to be a reliable shoe that could do a lot of different things well rather than as a platform for revolutionary technology. Timeless grey suede.",
+    "features": [
+      "ENCAP midsole cushioning combines lightweight foam with a durable polyurethane rim",
+      "Suede and mesh upper for breathability and retro heritage aesthetic",
+      "Spacious toe box for natural foot splay and all-day walking comfort",
+      "Rugged rubber tread pattern inspired by off-road trail running"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&q=80"
+  },
+  {
+    "id": 18,
+    "name": "Crocs Classic Clog Slip-On Comfort Sandals",
+    "category": "Footwear",
+    "brand": "Crocs",
+    "price": 2495,
+    "originalPrice": 3295,
+    "rating": 4.6,
+    "reviewsCount": 3100,
+    "stock": 40,
+    "description": "It's the iconic clog that started a comfort revolution around the world. The irreverent go-to comfort shoe that you're sure to fall deeper in love with day after day.",
+    "features": [
+      "Incredibly light and fun to wear — weighs only ounces",
+      "Water-friendly and buoyant; ventilation ports shed water and debris",
+      "Pivoting heel straps for a more secure, locked-in fit",
+      "Iconic Crocs Comfort: Lightweight, flexible, 360-degree comfort"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=800&q=80"
+  },
+  {
+    "id": 19,
+    "name": "Atomic Habits by James Clear",
+    "category": "Books",
+    "brand": "Penguin Random House",
+    "price": 540,
+    "originalPrice": 799,
+    "rating": 4.9,
+    "reviewsCount": 4820,
+    "stock": 50,
+    "description": "An Easy & Proven Way to Build Good Habits & Break Bad Ones. No matter your goals, Atomic Habits offers a proven framework for improving every day. James Clear reveals practical strategies that teach you exactly how to master tiny behaviors that lead to remarkable results.",
+    "features": [
+      "The #1 New York Times Bestseller with over 15 million copies sold",
+      "The Four Laws of Behavior Change clearly broken down",
+      "How to overcome lack of willpower, design your environment, and get back on track",
+      "Paperback edition, 320 pages, Penguin Random House"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&q=80"
+  },
+  {
+    "id": 20,
+    "name": "The Psychology of Money by Morgan Housel",
+    "category": "Books",
+    "brand": "Harriman House",
+    "price": 399,
+    "originalPrice": 499,
+    "rating": 4.8,
+    "reviewsCount": 3150,
+    "stock": 42,
+    "description": "Timeless lessons on wealth, greed, and happiness. Doing well with money isn't necessarily about what you know. It's about how you behave. And behavior is hard to teach, even to really smart people. Morgan Housel shares 19 short stories exploring the strange ways people think about money.",
+    "features": [
+      "International Wall Street Journal & Sunday Times Bestseller",
+      "Practical behavioral finance principles written in engaging storytelling format",
+      "Understand why personal financial success is a soft skill rather than pure math",
+      "Paperback edition, 256 pages, Harriman House"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=800&q=80"
+  },
+  {
+    "id": 21,
+    "name": "JavaScript: The Definitive Guide (7th Edition) by David Flanagan",
+    "category": "Books",
+    "brand": "O'Reilly Media",
+    "price": 1850,
+    "originalPrice": 2499,
+    "rating": 4.8,
+    "reviewsCount": 890,
+    "stock": 18,
+    "description": "Since 1996, JavaScript: The Definitive Guide has been the bible for JavaScript programmers. The 7th edition covers ECMAScript 2020, modern classes, modules, iterators, generators, async/await, and Web APIs.",
+    "features": [
+      "The comprehensive O'Reilly 'Rhino Book' reference manual",
+      "In-depth coverage of closures, prototypes, promises, and the Node.js ecosystem",
+      "Complete guide for intermediate to advanced JavaScript software engineers",
+      "Paperback, 704 pages, O'Reilly Media"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1589998059171-988d887df646?w=800&q=80"
+  },
+  {
+    "id": 22,
+    "name": "Designing Data-Intensive Applications by Martin Kleppmann",
+    "category": "Books",
+    "brand": "O'Reilly Media",
+    "price": 2190,
+    "originalPrice": 2890,
+    "rating": 4.9,
+    "reviewsCount": 1780,
+    "stock": 16,
+    "description": "The Big Ideas Behind Reliable, Scalable, and Maintainable Systems. Martin Kleppmann guides software architects and engineers through the pros and cons of technologies for processing and storing data.",
+    "features": [
+      "Examines relational, document, graph databases, and distributed key-value stores",
+      "Deep dive into replication, partitioning, transactions, and consensus protocols",
+      "Covers batch processing with MapReduce/Spark and stream processing with Kafka",
+      "Paperback, 616 pages, O'Reilly Media"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=800&q=80"
+  },
+  {
+    "id": 23,
+    "name": "The Pragmatic Programmer: 20th Anniversary Edition",
+    "category": "Books",
+    "brand": "Addison-Wesley",
+    "price": 2450,
+    "originalPrice": 3100,
+    "rating": 4.9,
+    "reviewsCount": 1420,
+    "stock": 21,
+    "description": "Your Journey To Mastery by David Thomas and Andrew Hunt. One of the most influential software engineering books of all time, fully updated for modern development environments and practices.",
+    "features": [
+      "Enduring engineering wisdom on DRY, orthogonality, tracer bullets, and refactoring",
+      "Tips for continuous learning, career mastery, and taking pride in craftsmanship",
+      "Hardcover 20th Anniversary Edition, 352 pages, Addison-Wesley Professional",
+      "Essential reading for professional software developers"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&q=80"
+  },
+  {
+    "id": 24,
+    "name": "Deep Work by Cal Newport",
+    "category": "Books",
+    "brand": "Grand Central Publishing",
+    "price": 450,
+    "originalPrice": 699,
+    "rating": 4.7,
+    "reviewsCount": 2190,
+    "stock": 33,
+    "description": "Rules for Focused Success in a Distracted World. Deep work is the ability to focus without distraction on a cognitively demanding task. It's a skill that allows you to quickly master complicated information and produce better results in less time.",
+    "features": [
+      "Wall Street Journal Business Bestseller & Amazon Best Business Book",
+      "Rigorous four-rule training program to transform your mind and habits",
+      "Strategies to quit social media addiction and drain shallow work",
+      "Paperback, 304 pages, Grand Central Publishing"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80"
+  }
+]
