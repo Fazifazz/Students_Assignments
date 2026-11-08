@@ -1,0 +1,341 @@
+
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "category": "Electronics",
+      "price": 1799,
+      "originalPrice": 2499,
+      "rating": 4.8,
+      "imageUrl": "/images/wirelessheadphone.png",
+      "description": "Enjoy immersive sound and comfortable listening with these stylish wireless headphones. Designed for music, entertainment, online classes and everyday use.",
+      "details": {
+        "brand": "ShopNest",
+        "material": "ABS Plastic and Synthetic Leather",
+        "color": "Black",
+        "ageGroup": "Teenagers and Adults",
+        "suitableFor": "Unisex",
+        "connectivity": "Bluetooth",
+        "design": "Over-Ear",
+        "warranty": "1 Year"
+      },
+      "features": [
+        "Wireless Bluetooth connectivity",
+        "Comfortable over-ear design",
+        "Soft cushioned ear pads",
+        "Built-in microphone",
+        "Lightweight construction",
+        "Easy control buttons"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch",
+      "category": "Electronics",
+      "price": 2799,
+      "originalPrice": 3999,
+      "rating": 4.7,
+      "imageUrl": "/images/smartwatch.png",
+      "description": "Stay connected and track your daily activities with this modern smartwatch. Its stylish design and smart features make it suitable for everyday use, workouts and outdoor activities.",
+      "details": {
+        "brand": "ShopNest",
+        "material": "Aluminium Alloy and Silicone",
+        "color": "Black",
+        "ageGroup": "Teenagers and Adults",
+        "suitableFor": "Unisex",
+        "display": "Touchscreen Digital Display",
+        "connectivity": "Bluetooth",
+        "warranty": "1 Year"
+      },
+      "features": [
+        "Digital touchscreen display",
+        "Activity tracking",
+        "Fitness monitoring",
+        "Bluetooth connectivity",
+        "Comfortable adjustable strap",
+        "Modern lightweight design"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Running Shoes",
+      "category": "Footwear",
+      "price": 1999,
+      "originalPrice": 2999,
+      "rating": 4.5,
+      "imageUrl": "/images/premiumrunningshoes.png",
+      "description": "Designed for comfort and everyday performance, these running shoes offer a lightweight feel and supportive sole. Suitable for jogging, walking, gym sessions and casual outings.",
+      "details": {
+        "brand": "ShopNest",
+        "material": "Mesh Fabric and Synthetic Material",
+        "color": "Black and White",
+        "ageGroup": "Adults",
+        "suitableFor": "Unisex",
+        "sole": "Rubber",
+        "closure": "Lace-Up",
+        "warranty": "Manufacturing Defects Only"
+      },
+      "features": [
+        "Breathable mesh upper",
+        "Lightweight construction",
+        "Cushioned footbed",
+        "Durable rubber outsole",
+        "Lace-up closure",
+        "Suitable for walking and running"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Leather Handbag",
+      "category": "Clothing",
+      "price": 2399,
+      "originalPrice": 3499,
+      "rating": 4.9,
+      "imageUrl": "/images/leatherhandbag.png",
+      "description": "Add elegance to your everyday style with this classic brown handbag. Its spacious interior and stylish appearance make it suitable for work, shopping and casual occasions.",
+      "details": {
+        "brand": "ShopNest",
+        "material": "Synthetic Leather",
+        "color": "Brown",
+        "ageGroup": "Adults",
+        "suitableFor": "Women",
+        "closure": "Zipper",
+        "design": "Structured Handbag",
+        "warranty": "No Warranty"
+      },
+      "features": [
+        "Elegant structured design",
+        "Spacious main compartment",
+        "Comfortable carrying handles",
+        "Adjustable shoulder strap",
+        "Durable synthetic leather",
+        "Suitable for everyday use"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Classic Sunglasses",
+      "category": "Clothing",
+      "price": 899,
+      "originalPrice": 1499,
+      "rating": 4.4,
+      "imageUrl": "/images/classicsunglass.png",
+      "description": "Complete your everyday look with these classic sunglasses. Featuring a timeless frame design, they are suitable for casual outings, travel and everyday styling.",
+      "details": {
+        "brand": "ShopNest",
+        "material": "Plastic Frame",
+        "color": "Black",
+        "ageGroup": "Adults",
+        "suitableFor": "Unisex",
+        "frameType": "Classic Full Frame",
+        "lensType": "Tinted Lens",
+        "warranty": "No Warranty"
+      },
+      "features": [
+        "Classic frame design",
+        "Lightweight construction",
+        "Comfortable nose support",
+        "Everyday fashion accessory",
+        "Easy to carry",
+        "Suitable for casual styling"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Everyday Backpack",
+      "category": "Clothing",
+      "price": 1299,
+      "originalPrice": 1999,
+      "rating": 4.6,
+      "imageUrl": "/images/backpack.png",
+      "description": "Carry your daily essentials conveniently with this versatile backpack. Designed for students, professionals and everyday commuters, it combines practical storage with a clean design.",
+      "details": {
+        "brand": "ShopNest",
+        "material": "Polyester Fabric",
+        "color": "Black",
+        "ageGroup": "Teenagers and Adults",
+        "suitableFor": "Unisex",
+        "closure": "Zipper",
+        "compartments": "Multiple Compartments",
+        "warranty": "No Warranty"
+      },
+      "features": [
+        "Spacious main compartment",
+        "Multiple storage pockets",
+        "Adjustable shoulder straps",
+        "Lightweight construction",
+        "Suitable for college and office",
+        "Everyday carry design"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Bluetooth Headphones",
+      "category": "Electronics",
+      "price": 1499,
+      "originalPrice": 2199,
+      "rating": 4.5,
+      "imageUrl": "/images/bluetoothheadphn.png",
+      "description": "Enjoy convenient wireless listening with these Bluetooth headphones. Their comfortable design makes them suitable for entertainment, calls and daily music sessions.",
+      "details": {
+        "brand": "ShopNest",
+        "material": "ABS Plastic and Synthetic Leather",
+        "color": "Black",
+        "ageGroup": "Teenagers and Adults",
+        "suitableFor": "Unisex",
+        "connectivity": "Bluetooth",
+        "design": "Over-Ear",
+        "warranty": "1 Year"
+      },
+      "features": [
+        "Bluetooth wireless connectivity",
+        "Over-ear listening design",
+        "Comfortable cushioned ear pads",
+        "Built-in microphone",
+        "Portable design",
+        "Easy-to-use controls"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Fitness Smart Watch",
+      "category": "Electronics",
+      "price": 2299,
+      "originalPrice": 3299,
+      "rating": 4.6,
+      "imageUrl": "/images/fitwatch.png",
+      "description": "Support your fitness routine with this stylish fitness smartwatch. Designed for people who want to monitor daily activity while keeping track of notifications and time.",
+      "details": {
+        "brand": "ShopNest",
+        "material": "Aluminium Alloy and Silicone",
+        "color": "Black",
+        "ageGroup": "Teenagers and Adults",
+        "suitableFor": "Unisex",
+        "display": "Digital Touchscreen",
+        "connectivity": "Bluetooth",
+        "warranty": "1 Year"
+      },
+      "features": [
+        "Daily activity tracking",
+        "Fitness monitoring",
+        "Digital touchscreen",
+        "Bluetooth connectivity",
+        "Adjustable silicone strap",
+        "Modern sporty appearance"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Casual Running Shoes",
+      "category": "Footwear",
+      "price": 1799,
+      "originalPrice": 2599,
+      "rating": 4.4,
+      "imageUrl": "/images/runningshoes.png",
+      "description": "A versatile pair of casual running shoes designed for everyday comfort. Suitable for walking, light workouts, jogging and casual outdoor activities.",
+      "details": {
+        "brand": "ShopNest",
+        "material": "Mesh Fabric and Synthetic Material",
+        "color": "Black and White",
+        "ageGroup": "Adults",
+        "suitableFor": "Unisex",
+        "sole": "Rubber",
+        "closure": "Lace-Up",
+        "warranty": "Manufacturing Defects Only"
+      },
+      "features": [
+        "Breathable upper material",
+        "Comfortable cushioned sole",
+        "Lightweight design",
+        "Durable outsole",
+        "Lace-up fastening",
+        "Suitable for everyday wear"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Fashion Handbag",
+      "category": "Clothing",
+      "price": 1999,
+      "originalPrice": 2999,
+      "rating": 4.7,
+      "imageUrl": "/images/fashionbag.png",
+      "description": "A stylish handbag designed to complement everyday outfits. Its practical storage space and elegant appearance make it suitable for shopping, work and casual occasions.",
+      "details": {
+        "brand": "ShopNest",
+        "material": "Synthetic Leather",
+        "color": "Brown",
+        "ageGroup": "Adults",
+        "suitableFor": "Women",
+        "closure": "Zipper",
+        "design": "Fashion Handbag",
+        "warranty": "No Warranty"
+      },
+      "features": [
+        "Stylish everyday design",
+        "Spacious storage compartment",
+        "Comfortable carrying handles",
+        "Shoulder strap",
+        "Durable synthetic material",
+        "Suitable for casual and formal styling"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Premium Sunglasses",
+      "category": "Clothing",
+      "price": 999,
+      "originalPrice": 1599,
+      "rating": 4.5,
+      "imageUrl": "/images/premiumsunglass.png",
+      "description": "Upgrade your style with these premium-looking sunglasses. Their versatile design makes them a convenient accessory for travel, outdoor activities and everyday outfits.",
+      "details": {
+        "brand": "ShopNest",
+        "material": "Plastic Frame",
+        "color": "Black",
+        "ageGroup": "Adults",
+        "suitableFor": "Unisex",
+        "frameType": "Full Frame",
+        "lensType": "Tinted Lens",
+        "warranty": "No Warranty"
+      },
+      "features": [
+        "Stylish full-frame design",
+        "Lightweight frame",
+        "Comfortable fit",
+        "Versatile fashion accessory",
+        "Easy to carry",
+        "Suitable for everyday styling"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Travel Backpack",
+      "category": "Books",
+      "price": 1199,
+      "originalPrice": 1899,
+      "rating": 4.6,
+      "imageUrl": "/images/travelbag.png",
+      "description": "Make everyday travel more convenient with this practical backpack. Its spacious storage and comfortable straps make it suitable for short trips, college and daily commuting.",
+      "details": {
+        "brand": "ShopNest",
+        "material": "Polyester Fabric",
+        "color": "Black",
+        "ageGroup": "Teenagers and Adults",
+        "suitableFor": "Unisex",
+        "closure": "Zipper",
+        "compartments": "Multiple Compartments",
+        "warranty": "No Warranty"
+      },
+      "features": [
+        "Spacious storage compartment",
+        "Multiple pockets",
+        "Adjustable shoulder straps",
+        "Lightweight construction",
+        "Suitable for travel and commuting",
+        "Practical everyday design"
+      ]
+    }
+  ]
+}
