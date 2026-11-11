@@ -31,7 +31,12 @@ const getById = (id) => {
 
 // Create a new note
 const create = (note) => {
-  const newNote = { id: notes.length + 1, ...note };
+  const newNote = {
+    id: Date.now(),
+    title: note.title,
+    content: note.content,
+    category: note.category,
+  };
   notes.push(newNote);
   return newNote;
 };
