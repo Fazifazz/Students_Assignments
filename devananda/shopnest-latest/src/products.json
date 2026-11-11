@@ -1,0 +1,112 @@
+[
+    
+  {
+    "id": 1,
+    "name": "Oversized button-down shirt",
+    "category": "Clothing",
+    "price": 499,
+    "originalPrice": 799,
+    "rating": 5,
+    "imageUrl": "assets/Oversized button-down shirt .jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Headphones",
+    "category": "Electronics",
+    "price": 1299,
+    "originalPrice": 1699,
+    "rating": 4,
+    "imageUrl": "assets/headphones.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Watch",
+    "category": "Accessories",
+    "price": 999,
+    "originalPrice": 1299,
+    "rating": 5,
+    "imageUrl": "assets/watch.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Leather Boots",
+    "category": "Footwear",
+    "price": 1799,
+    "originalPrice": 2199,
+    "rating": 5,
+    "imageUrl": "assets/boots.avif"
+  },
+  {
+    "id": 5,
+    "name": "Backpack",
+    "category": "Bags",
+    "price": 899,
+    "originalPrice": 1199,
+    "rating": 3,
+    "imageUrl": "assets/backpack.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Skincare",
+    "category": "Skincare",
+    "price": 699,
+    "originalPrice": 899,
+    "rating": 5,
+    "imageUrl": "assets/skincare.avif"
+  },
+  {
+    "id": 7,
+    "name": "Perfume",
+    "category": "Perfume",
+    "price": 999,
+    "originalPrice": 1299,
+    "rating": 5,
+    "imageUrl": "assets/perfume.avif"
+  },
+  {
+    "id": 8,
+    "name": "Sunglasses",
+    "category": "Accessories",
+    "price": 799,
+    "originalPrice": 999,
+    "rating": 5,
+    "imageUrl": "assets/sunglasses.avif"
+  },
+  {
+    "id": 9,
+    "name": "Jewellery",
+    "category": "Accessories",
+    "price": 1499,
+    "originalPrice": 1999,
+    "rating": 5,
+    "imageUrl": "assets/jewellery.avif"
+  },
+  {
+    "id": 10,
+    "name": "Handbag",
+    "category": "Bags",
+    "price": 1399,
+    "originalPrice": 1599,
+    "rating": 5,
+    "imageUrl": "assets/handbag.avif"
+  },
+  {
+    "id": 11,
+    "name": "Samsung Galaxy S24 Ultra",
+    "category": "Electronics",
+    "price": 112999,
+    "originalPrice": 125999,
+    "rating": 5,
+    "imageUrl": "assets/Samsung Galaxy S24 Ultra.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Coffee Maker",
+    "category": "Electronics",
+    "price": 1999,
+    "originalPrice": 2499,
+    "rating": 4,
+    "imageUrl": "assets/coffee-maker.webp"
+  }
+
+]
