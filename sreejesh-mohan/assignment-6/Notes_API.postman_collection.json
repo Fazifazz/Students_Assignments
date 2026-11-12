@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "c1f7a08b-4a5e-4c7b-8902-98e3b749f7b1",
+		"name": "Notes REST API - Assignment 6",
+		"description": "Postman collection for Notes REST API covering all 5 CRUD endpoints (Sessions 43-45).",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. GET All Notes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"notes"
+					]
+				},
+				"description": "Fetch all notes from the in-memory store. Initial array has 3 notes."
+			},
+			"response": []
+		},
+		{
+			"name": "2. GET Note by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/notes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"notes",
+						"1"
+					]
+				},
+				"description": "Fetch a single note by ID (1)."
+			},
+			"response": []
+		},
+		{
+			"name": "2b. GET Note by ID (404 Not Found)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/notes/999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"notes",
+						"999"
+					]
+				},
+				"description": "Tests 404 handling when ID does not exist."
+			},
+			"response": []
+		},
+		{
+			"name": "3. POST Create Note",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Database Integration with MongoDB\",\n  \"content\": \"Connect Express app to MongoDB and use Mongoose models.\",\n  \"category\": \"Backend\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"notes"
+					]
+				},
+				"description": "Creates a new note with unique ID assigned using Date.now(). Returns status 201."
+			},
+			"response": []
+		},
+		{
+			"name": "4. PUT Update Note",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Learn Node.js Core Modules (Updated)\",\n  \"content\": \"Deep dive into fs, path, events, http, and streams.\",\n  \"category\": \"Advanced Study\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/notes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"notes",
+						"1"
+					]
+				},
+				"description": "Updates an existing note's title, content, or category by ID."
+			},
+			"response": []
+		},
+		{
+			"name": "5. DELETE Note",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/notes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"notes",
+						"2"
+					]
+				},
+				"description": "Deletes a note by ID and returns the removed note."
+			},
+			"response": []
+		}
+	]
+}
