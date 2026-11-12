@@ -1,0 +1,46 @@
+### 1. GET All Notes
+GET http://localhost:3000/api/notes
+
+###
+
+### 2. GET Note by ID
+GET http://localhost:3000/api/notes/1
+
+###
+
+### 2b. GET Note by ID (404 Not Found)
+GET http://localhost:3000/api/notes/999
+
+###
+
+### 3. POST Create a Note
+POST http://localhost:3000/api/notes
+Content-Type: application/json
+
+{
+  "title": "MongoDB & Mongoose Schema",
+  "content": "Build models and connect database in Phase 4.",
+  "category": "Backend"
+}
+
+###
+
+### 4. PUT Update Note
+PUT http://localhost:3000/api/notes/1
+Content-Type: application/json
+
+{
+  "title": "Learn Node.js Core Modules (Updated)",
+  "content": "Deep dive into fs, path, events, http, and streams.",
+  "category": "Advanced Study"
+}
+
+###
+
+### 5. DELETE Note
+DELETE http://localhost:3000/api/notes/2
+
+###
+
+### 5b. DELETE Note (404 Not Found)
+DELETE http://localhost:3000/api/notes/999
