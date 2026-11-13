@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "genre": "Sci-Fi",
+    "year": 2010,
+    "rating": 8.8,
+    "poster": "/posters/inception movie.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Retro",
+    "genre": "Tamil",
+    "year": 2025,
+    "rating": 8.0,
+    "poster": "/posters/retro movie.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Bangalore Days",
+    "genre": "Malayalam",
+    "year": 2014,
+    "rating": 8.3,
+    "poster": "/posters/bangalore days.jpg"
+  },
+  {
+    "id": 4,
+    "title": "3 Idiots",
+    "genre": "Hindi",
+    "year": 2009,
+    "rating": 8.4,
+    "poster": "/posters/3 idiots.jpg"
+  }
+]
