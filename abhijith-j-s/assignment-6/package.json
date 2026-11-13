@@ -1,0 +1,22 @@
+{
+  "name": "notes-rest-api",
+  "version": "1.0.0",
+  "description": "A beginner-friendly Notes REST API built with Node.js and Express (in-memory storage)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "rest-api",
+    "notes",
+    "crud"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
