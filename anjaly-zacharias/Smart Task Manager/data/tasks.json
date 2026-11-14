@@ -1,0 +1,57 @@
+[
+  {
+    "id": "69b3a8a8-ab2a-4190-a193-3d7223b97227",
+    "title": "assignment 6",
+    "description": "",
+    "category": "Personal",
+    "priority": "Medium",
+    "dueDate": "",
+    "status": "Pending",
+    "createdAt": "2026-11-13T16:09:29.972Z",
+    "updatedAt": "2026-11-13T16:09:29.972Z"
+  },
+  {
+    "id": "55bd2797-a52b-4b52-bbc1-cba65c7f483b",
+    "title": "assignment 6",
+    "description": "",
+    "category": "Study",
+    "priority": "High",
+    "dueDate": "2026-11-18",
+    "status": "Completed",
+    "createdAt": "2026-11-13T15:45:33.809Z",
+    "updatedAt": "2026-11-13T15:46:04.307Z"
+  },
+  {
+    "id": "sample-task-1",
+    "title": "Plan the week",
+    "description": "Review priorities and block out time for focused work.",
+    "category": "Personal",
+    "priority": "High",
+    "dueDate": "2027-01-18",
+    "status": "In Progress",
+    "createdAt": "2026-11-13T08:00:00.000Z",
+    "updatedAt": "2026-11-13T08:00:00.000Z"
+  },
+  {
+    "id": "sample-task-2",
+    "title": "Read JavaScript notes",
+    "description": "Revisit the notes on async functions and fetch.",
+    "category": "Study",
+    "priority": "Medium",
+    "dueDate": "2027-01-20",
+    "status": "Pending",
+    "createdAt": "2026-11-13T08:10:00.000Z",
+    "updatedAt": "2026-11-13T08:10:00.000Z"
+  },
+  {
+    "id": "sample-task-3",
+    "title": "Send project update",
+    "description": "Share the latest progress with the team.",
+    "category": "Work",
+    "priority": "Low",
+    "dueDate": "2027-01-16",
+    "status": "Pending",
+    "createdAt": "2026-11-13T08:20:00.000Z",
+    "updatedAt": "2026-11-13T15:32:51.840Z"
+  }
+]
