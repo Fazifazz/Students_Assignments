@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A calm, clear space to plan your work and keep your day moving."
+    />
+    <title>Taskflow — Smart Task Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#" data-view="all" aria-label="Taskflow home">
+          <span class="brand-mark" aria-hidden="true">✓</span>
+          <span>taskflow<span class="brand-period">.</span></span>
+        </a>
+
+        <div class="nav-group">
+          <p class="nav-label">WORKSPACE</p>
+          <nav class="main-nav">
+            <button class="nav-link is-active" type="button" data-view="all">
+              <span class="nav-icon" aria-hidden="true">◫</span> Overview
+            </button>
+            <button class="nav-link" type="button" data-view="all">
+              <span class="nav-icon" aria-hidden="true">▤</span> All tasks
+              <span class="nav-count" id="nav-total">0</span>
+            </button>
+          </nav>
+        </div>
+
+        <div class="nav-group">
+          <p class="nav-label">YOUR TASKS</p>
+          <nav class="main-nav">
+            <button class="nav-link" type="button" data-view="Pending">
+              <span class="status-dot dot-pending"></span> To do
+              <span class="nav-count" id="nav-pending">0</span>
+            </button>
+            <button class="nav-link" type="button" data-view="In Progress">
+              <span class="status-dot dot-progress"></span> In progress
+              <span class="nav-count" id="nav-progress">0</span>
+            </button>
+            <button class="nav-link" type="button" data-view="Completed">
+              <span class="status-dot dot-completed"></span> Completed
+              <span class="nav-count" id="nav-completed">0</span>
+            </button>
+          </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+          <div class="sidebar-note">
+            <span class="note-spark" aria-hidden="true">✦</span>
+            <p>A little progress each day adds up to big results.</p>
+          </div>
+          <div class="profile">
+            <span class="avatar" aria-hidden="true">Y</span>
+            <span class="profile-copy"><strong>Your workspace</strong><small>Personal plan</small></span>
+            <span class="profile-more" aria-hidden="true">···</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="breadcrumbs"><span>Workspace</span><span class="crumb-slash">/</span><strong id="page-label">Overview</strong></div>
+          <div class="topbar-actions">
+            <span class="today-label" id="today-label"></span>
+            <button class="button button-primary button-small" id="add-task-top" type="button">
+              <span aria-hidden="true">＋</span> Add task
+            </button>
+          </div>
+        </header>
+
+        <section class="page-content" aria-labelledby="welcome-heading">
+          <div class="welcome-row">
+            <div>
+              <p class="eyebrow">YOUR PRODUCTIVITY, AT A GLANCE</p>
+              <h1 id="welcome-heading">Good things take <span>focus.</span></h1>
+              <p class="welcome-copy">Here’s what’s on your plate. Make today count.</p>
+            </div>
+            <div class="date-chip"><span aria-hidden="true">◷</span><span id="date-chip-text"></span></div>
+          </div>
+
+          <section class="stats-grid" aria-label="Task summary">
+            <article class="stat-card stat-total">
+              <div class="stat-top"><span class="stat-icon icon-lavender" aria-hidden="true">▤</span><span class="stat-caption">ALL TASKS</span></div>
+              <p class="stat-value" id="stat-total">0</p>
+              <p class="stat-foot">Tasks in your workspace</p>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top"><span class="stat-icon icon-amber" aria-hidden="true">◷</span><span class="stat-caption">TO DO</span></div>
+              <p class="stat-value" id="stat-pending">0</p>
+              <p class="stat-foot"><span class="tiny-dot dot-pending"></span>Waiting to get started</p>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top"><span class="stat-icon icon-blue" aria-hidden="true">↗</span><span class="stat-caption">IN PROGRESS</span></div>
+              <p class="stat-value" id="stat-progress">0</p>
+              <p class="stat-foot"><span class="tiny-dot dot-progress"></span>Work in motion</p>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top"><span class="stat-icon icon-green" aria-hidden="true">✓</span><span class="stat-caption">COMPLETED</span></div>
+              <p class="stat-value" id="stat-completed">0</p>
+              <p class="stat-foot"><span class="tiny-dot dot-completed"></span>Nicely done</p>
+            </article>
+          </section>
+
+          <section class="progress-panel" aria-label="Overall progress">
+            <div class="progress-copy">
+              <span class="progress-icon" aria-hidden="true">✦</span>
+              <div><h2>Your progress</h2><p id="progress-subtitle">A good day starts with one small step.</p></div>
+            </div>
+            <div class="progress-meter">
+              <div class="progress-meta"><span>Completion rate</span><strong id="completion-rate">0%</strong></div>
+              <div class="progress-track" role="progressbar" aria-label="Task completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div>
+            </div>
+            <div class="overdue-count"><span id="stat-overdue">0</span><small>overdue</small></div>
+          </section>
+
+          <section class="tasks-section" aria-labelledby="tasks-heading">
+            <div class="section-heading">
+              <div><p class="eyebrow">STAY ON TOP OF IT</p><h2 id="tasks-heading">Your tasks <span id="visible-count" class="heading-count">0</span></h2></div>
+              <button class="button button-outline" id="add-task-main" type="button"><span aria-hidden="true">＋</span> New task</button>
+            </div>
+
+            <div class="filter-bar">
+              <label class="search-box">
+                <span aria-hidden="true">⌕</span>
+                <input id="search-input" type="search" placeholder="Search tasks..." autocomplete="off" aria-label="Search tasks by title" />
+              </label>
+              <label class="select-wrap"><span class="sr-only">Filter by category</span><select id="category-filter"><option value="">All categories</option><option>Personal</option><option>Study</option><option>Work</option><option>Other</option></select></label>
+              <label class="select-wrap"><span class="sr-only">Filter by priority</span><select id="priority-filter"><option value="">All priorities</option><option>High</option><option>Medium</option><option>Low</option></select></label>
+              <label class="select-wrap"><span class="sr-only">Filter by status</span><select id="status-filter"><option value="">All statuses</option><option>Pending</option><option>In Progress</option><option>Completed</option></select></label>
+              <label class="select-wrap sort-select"><span class="sr-only">Sort tasks by due date</span><select id="sort-filter"><option value="asc">Due date: earliest</option><option value="desc">Due date: latest</option></select></label>
+            </div>
+
+            <div class="task-list" id="task-list" aria-live="polite">
+              <div class="loading-state">Loading your tasks<span class="loading-dots">...</span></div>
+            </div>
+          </section>
+          <footer class="page-footer"><span>Made for a more focused day.</span><span>Taskflow <span class="brand-period">●</span></span></footer>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="task-dialog" id="task-dialog" aria-labelledby="dialog-title">
+      <form id="task-form">
+        <div class="dialog-heading">
+          <div><p class="eyebrow" id="dialog-eyebrow">MAKE IT HAPPEN</p><h2 id="dialog-title">Create a task</h2></div>
+          <button class="icon-button" id="close-dialog" type="button" aria-label="Close dialog">×</button>
+        </div>
+        <input id="task-id" type="hidden" />
+        <label class="form-field">Task title <span class="required-mark">*</span><input id="task-title" name="title" type="text" maxlength="120" placeholder="What needs to get done?" required /></label>
+        <label class="form-field">Description <span class="optional-label">Optional</span><textarea id="task-description" name="description" rows="3" maxlength="2000" placeholder="Add a few details..."></textarea></label>
+        <div class="form-row">
+          <label class="form-field">Category<select id="task-category" name="category"><option>Personal</option><option>Study</option><option>Work</option><option>Other</option></select></label>
+          <label class="form-field">Priority<select id="task-priority" name="priority"><option>Medium</option><option>Low</option><option>High</option></select></label>
+        </div>
+        <div class="form-row">
+          <label class="form-field">Due date<input id="task-due-date" name="dueDate" type="date" /></label>
+          <label class="form-field">Status<select id="task-status" name="status"><option>Pending</option><option>In Progress</option><option>Completed</option></select></label>
+        </div>
+        <p class="form-error" id="form-error" role="alert"></p>
+        <div class="dialog-actions"><button class="button button-outline" id="cancel-dialog" type="button">Cancel</button><button class="button button-primary" type="submit" id="save-task">Create task</button></div>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
