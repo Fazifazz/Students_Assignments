@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ADMIN001",
+    "name": "ResolveIt Admin",
+    "email": "admin@resolveit.com",
+    "password": "$2b$10$hP3.5e1iGjzbXIdXvlRJNeH3X5SOkPm..vBYNnoOPzgxedmMtKG2y",
+    "role": "admin",
+    "isActive": true,
+    "createdAt": "2026-11-13T16:00:44.718Z"
+  },
+  {
+    "id": "USER-1794586998632-6cc635",
+    "name": "liya",
+    "email": "liya@gmail.com",
+    "password": "$2b$10$5qqHQ.AukA.lFyvbcFPA3uud739Z5qwlCDf22oY2vta/iqYW9MFFq",
+    "role": "user",
+    "isActive": true,
+    "createdAt": "2026-11-13T16:23:18.708Z"
+  },
+  {
+    "id": "USER-1794595022227-69e7b3",
+    "name": "liyafathima",
+    "email": "liyafathima@gmail.com",
+    "password": "$2b$10$c60NVEOzZXdM97JcdFy6.e/iszckU13yA5A0Vv9z6TkoG7ZRI10mW",
+    "role": "user",
+    "isActive": true,
+    "createdAt": "2026-11-13T18:37:02.318Z"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "NOT-1794587179074-17487d",
+    "userId": "USER-1794586998632-6cc635",
+    "message": "Your complaint \"streetlight out near the road\" has been submitted",
+    "complaintId": "CMP-1794587179070-ea15fe",
+    "isRead": false,
+    "createdAt": "2026-11-13T16:26:19.074Z"
+  },
+  {
+    "id": "NOT-1794590552901-0dfa6d",
+    "userId": "USER-1794586998632-6cc635",
+    "message": "Your complaint \"streetlight out near the road\" is now Under Review",
+    "complaintId": "CMP-1794587179070-ea15fe",
+    "isRead": false,
+    "createdAt": "2026-11-13T17:22:32.901Z"
+  },
+  {
+    "id": "NOT-1794590601856-25e250",
+    "userId": "USER-1794586998632-6cc635",
+    "message": "Your complaint \"streetlight out near the road\" is now Rejected",
+    "complaintId": "CMP-1794587179070-ea15fe",
+    "isRead": false,
+    "createdAt": "2026-11-13T17:23:21.856Z"
+  },
+  {
+    "id": "NOT-1794591011742-62dbbc",
+    "userId": "USER-1794586998632-6cc635",
+    "message": "Your complaint \"water purifier is not working\" has been submitted",
+    "complaintId": "CMP-1794591011738-1e4c16",
+    "isRead": false,
+    "createdAt": "2026-11-13T17:30:11.742Z"
+  },
+  {
+    "id": "NOT-1794591066285-decd6e",
+    "userId": "USER-1794586998632-6cc635",
+    "message": "Your complaint \"water purifier is not working\" has been updated",
+    "complaintId": "CMP-1794591011738-1e4c16",
+    "isRead": false,
+    "createdAt": "2026-11-13T17:31:06.285Z"
+  },
+  {
+    "id": "NOT-1794591075407-b6297a",
+    "userId": "USER-1794586998632-6cc635",
+    "message": "Your complaint \"water purifier is not working\" is now Under Review",
+    "complaintId": "CMP-1794591011738-1e4c16",
+    "isRead": false,
+    "createdAt": "2026-11-13T17:31:15.407Z"
+  },
+  {
+    "id": "NOT-1794595105169-bda427",
+    "userId": "USER-1794595022227-69e7b3",
+    "message": "Your complaint \"water purifier is not working\" has been submitted",
+    "complaintId": "CMP-1794595105162-1e467d",
+    "isRead": false,
+    "createdAt": "2026-11-13T18:38:25.169Z"
+  },
+  {
+    "id": "NOT-1794595231153-bbd6e6",
+    "userId": "USER-1794595022227-69e7b3",
+    "message": "Your complaint \"water purifier is not working\" is now Resolved",
+    "complaintId": "CMP-1794595105162-1e467d",
+    "isRead": false,
+    "createdAt": "2026-11-13T18:40:31.153Z"
+  }
+]
