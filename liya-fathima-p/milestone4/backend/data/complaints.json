@@ -1,0 +1,107 @@
+[
+  {
+    "id": "CMP-1794587179070-ea15fe",
+    "userId": "USER-1794586998632-6cc635",
+    "title": "streetlight out near the road",
+    "category": "Facilities",
+    "description": "street light shgsfddsr",
+    "location": "hdggttte",
+    "priority": "Medium",
+    "contact": "",
+    "status": "Rejected",
+    "departmentId": null,
+    "adminResponse": "",
+    "comments": [],
+    "history": [
+      {
+        "status": "Pending",
+        "note": "Complaint submitted",
+        "date": "2026-11-13T16:26:19.071Z"
+      },
+      {
+        "status": "Under Review",
+        "note": "Status changed from Pending to Under Review",
+        "date": "2026-11-13T17:22:32.898Z",
+        "userId": "ADMIN001",
+        "role": "admin"
+      },
+      {
+        "status": "Rejected",
+        "note": "Status changed from Under Review to Rejected",
+        "date": "2026-11-13T17:23:21.854Z",
+        "userId": "ADMIN001",
+        "role": "admin"
+      }
+    ],
+    "createdAt": "2026-11-13T16:26:19.071Z",
+    "updatedAt": "2026-11-13T17:23:21.854Z"
+  },
+  {
+    "id": "CMP-1794591011738-1e4c16",
+    "userId": "USER-1794586998632-6cc635",
+    "title": "water purifier is not working",
+    "category": "Maintenance",
+    "description": "The water purifier is not working, and no clean drinking water is available. Please inspect and repair it as soon as possible. This is affecting everyone who relies on it",
+    "location": "Ground-floor water station, beside the main lobby.",
+    "priority": "Urgent",
+    "contact": "",
+    "status": "Under Review",
+    "departmentId": "DEP001",
+    "adminResponse": "",
+    "comments": [],
+    "history": [
+      {
+        "status": "Pending",
+        "note": "Complaint submitted",
+        "date": "2026-11-13T17:30:11.738Z"
+      },
+      {
+        "status": "Pending",
+        "note": "Assigned to Maintenance",
+        "date": "2026-11-13T17:31:06.283Z",
+        "userId": "ADMIN001",
+        "role": "admin"
+      },
+      {
+        "status": "Under Review",
+        "note": "Status changed from Pending to Under Review",
+        "date": "2026-11-13T17:31:15.405Z",
+        "userId": "ADMIN001",
+        "role": "admin"
+      }
+    ],
+    "createdAt": "2026-11-13T17:30:11.738Z",
+    "updatedAt": "2026-11-13T17:31:15.405Z"
+  },
+  {
+    "id": "CMP-1794595105162-1e467d",
+    "userId": "USER-1794595022227-69e7b3",
+    "title": "water purifier is not working",
+    "category": "Maintenance",
+    "description": "water purifier is not working",
+    "location": "in the first floor of main building",
+    "priority": "High",
+    "contact": "1234567890",
+    "status": "Resolved",
+    "departmentId": "DEP001",
+    "adminResponse": "",
+    "attachments": [],
+    "comments": [],
+    "history": [
+      {
+        "status": "Pending",
+        "note": "Complaint submitted",
+        "date": "2026-11-13T18:38:25.163Z"
+      },
+      {
+        "status": "Resolved",
+        "note": "Status changed from Pending to Resolved; Assigned to Maintenance; Priority changed to High",
+        "date": "2026-11-13T18:40:31.149Z",
+        "userId": "ADMIN001",
+        "role": "admin"
+      }
+    ],
+    "createdAt": "2026-11-13T18:38:25.163Z",
+    "updatedAt": "2026-11-13T18:40:31.149Z"
+  }
+]

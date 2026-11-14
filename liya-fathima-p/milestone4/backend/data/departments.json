@@ -1,0 +1,33 @@
+
+[
+  {
+    "id": "DEP001",
+    "name": "Maintenance",
+    "description": "Building and general maintenance"
+  },
+  {
+    "id": "DEP002",
+    "name": "Electrical",
+    "description": "Electrical issues and repairs"
+  },
+  {
+    "id": "DEP003",
+    "name": "Water Management",
+    "description": "Water supply and plumbing"
+  },
+  {
+    "id": "DEP004",
+    "name": "IT Support",
+    "description": "Internet and network issues"
+  },
+  {
+    "id": "DEP005",
+    "name": "Security",
+    "description": "Safety and security concerns"
+  },
+  {
+    "id": "DEP006",
+    "name": "Administration",
+    "description": "General administrative issues"
+  }
+]
