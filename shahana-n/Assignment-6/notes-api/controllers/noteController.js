@@ -2,85 +2,111 @@
 const Note = require('../models/Note');
 
 // GET all notes
-const getAllNotes = (req, res) => {
-  res.status(200).json(Note.getAll());
+const getAllNotes = async (req, res, next) => {
+  try {
+    const notes = Note.getAll();
+
+    res.status(200).json({
+      success: true,
+      count: notes.length,
+      data: notes
+    });
+  } catch (err) {
+    next(err);
+  }
 };
 
 // GET note by ID
-const getNoteById = (req, res) => {
-  const note = Note.getById(req.params.id);
+const getNoteById = async (req, res, next) => {
+  try {
+    const note =  Note.getById(req.params.id);
 
-  if (!note) {
-    return res.status(404).json({
-      success: false,
-      message: 'Note not found'
+    if (!note) {
+      return res.status(404).json({
+        success: false,
+        message: 'Note not found'
+      });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: note
     });
+  } catch (err) {
+    next(err);
   }
-
-  res.status(200).json({
-    success: true,
-    data: note
-  });
 };
 
 // POST create note
-const createNote = (req, res) => {
-  const { title, content, category } = req.body;
+const createNote = async (req, res, next) => {
+  try {
+    const { title, content, category } = req.body;
 
-  if (!title || !content || !category) {
-    return res.status(400).json({
-      success: false,
-      message: 'Title, content and category are required'
+    if (!title || !content || !category) {
+      return res.status(400).json({
+        success: false,
+        message: 'Title, content and category are required'
+      });
+    }
+
+    const newNote =  Note.create({
+      title,
+      content,
+      category
     });
+
+    res.status(201).json({
+      success: true,
+      message: 'Note created',
+      data: newNote
+    });
+  } catch (err) {
+    next(err);
   }
-
-  const newNote = Note.create({
-    title,
-    content,
-    category
-  });
-
-  res.status(201).json({
-    success: true,
-    message: 'Note created',
-    data: newNote
-  });
 };
 
 // PUT update note
-const updateNote = (req, res) => {
-  const updated = Note.update(req.params.id, req.body);
+const updateNote = async (req, res, next) => {
+  try {
+    const updated =  Note.update(req.params.id, req.body);
 
-  if (!updated) {
-    return res.status(404).json({
-      success: false,
-      message: 'Note not found'
+    if (!updated) {
+      return res.status(404).json({
+        success: false,
+        message: 'Note not found'
+      });
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Note updated',
+      data: updated
     });
+  } catch (err) {
+    next(err);
   }
-
-  res.status(200).json({
-    success: true,
-    message: 'Note updated',
-    data: updated
-  });
 };
 
 // DELETE note
-const deleteNote = (req, res) => {
-  const deleted = Note.remove(req.params.id);
+const deleteNote = async (req, res, next) => {
+  try {
+    const deleted = Note.remove(req.params.id);
 
-  if (!deleted) {
-    return res.status(404).json({
-      success: false,
-      message: 'Note not found'
+    if (!deleted) {
+      return res.status(404).json({
+        success: false,
+        message: 'Note not found'
+      });
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Note deleted',
+      data: deleted
     });
+  } catch (err) {
+    next(err);
   }
-
-  res.status(200).json({
-    success: true,
-    message: 'Note deleted',
-    data: deleted
-  });
 };
 
 module.exports = {
