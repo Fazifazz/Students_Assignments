@@ -1,0 +1,227 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "EquipTrack REST API",
+    "description": "Postman Collection for testing all EquipTrack backend endpoints (Sessions 43, 44, 45)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Equipment",
+      "item": [
+        {
+          "name": "1. GET All Equipment",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/equipment",
+              "host": ["{{base_url}}"],
+              "path": ["api", "equipment"]
+            },
+            "description": "Fetch complete list of equipment fleet."
+          }
+        },
+        {
+          "name": "2. GET Equipment with Filters (Search & Category)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/equipment?category=Power Tools&search=drill",
+              "host": ["{{base_url}}"],
+              "path": ["api", "equipment"],
+              "query": [
+                {
+                  "key": "category",
+                  "value": "Power Tools"
+                },
+                {
+                  "key": "search",
+                  "value": "drill"
+                }
+              ]
+            },
+            "description": "Filter equipment by query parameters."
+          }
+        },
+        {
+          "name": "3. GET Equipment Categories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/equipment/categories",
+              "host": ["{{base_url}}"],
+              "path": ["api", "equipment", "categories"]
+            }
+          }
+        },
+        {
+          "name": "4. GET Equipment by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/equipment/1",
+              "host": ["{{base_url}}"],
+              "path": ["api", "equipment", "1"]
+            }
+          }
+        },
+        {
+          "name": "5. GET Equipment by ID (404 Not Found)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/equipment/999",
+              "host": ["{{base_url}}"],
+              "path": ["api", "equipment", "999"]
+            }
+          }
+        },
+        {
+          "name": "6. POST Create Equipment",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"CAT 301.5 Mini Excavator\",\n  \"category\": \"Heavy Machinery\",\n  \"dailyRate\": 3500,\n  \"description\": \"Compact mini hydraulic excavator for earthmoving and landscaping projects.\",\n  \"serialNumber\": \"CAT-MINI-091\",\n  \"location\": \"Yard North 2\",\n  \"image\": \"https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=600&q=80\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/equipment",
+              "host": ["{{base_url}}"],
+              "path": ["api", "equipment"]
+            }
+          }
+        },
+        {
+          "name": "7. PUT Update Equipment Status",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"Available\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/equipment/3/status",
+              "host": ["{{base_url}}"],
+              "path": ["api", "equipment", "3", "status"]
+            }
+          }
+        },
+        {
+          "name": "8. DELETE Equipment by ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/equipment/6",
+              "host": ["{{base_url}}"],
+              "path": ["api", "equipment", "6"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Rentals & Bookings",
+      "item": [
+        {
+          "name": "1. GET All Active & Past Rentals",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/rentals",
+              "host": ["{{base_url}}"],
+              "path": ["api", "rentals"]
+            }
+          }
+        },
+        {
+          "name": "2. POST Create Rental Booking",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"equipmentId\": 1,\n  \"customerName\": \"Sreejesh Mohan\",\n  \"customerEmail\": \"sreejesh@example.com\",\n  \"customerPhone\": \"9876543210\",\n  \"startDate\": \"2026-11-20\",\n  \"rentalDays\": 3\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/rentals",
+              "host": ["{{base_url}}"],
+              "path": ["api", "rentals"]
+            }
+          }
+        },
+        {
+          "name": "3. PUT Mark Rental as Returned",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/rentals/101/return",
+              "host": ["{{base_url}}"],
+              "path": ["api", "rentals", "101", "return"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "System & Health",
+      "item": [
+        {
+          "name": "Root Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/",
+              "host": ["{{base_url}}"],
+              "path": [""]
+            }
+          }
+        },
+        {
+          "name": "404 Route Catch-All",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/unknown-endpoint",
+              "host": ["{{base_url}}"],
+              "path": ["api", "unknown-endpoint"]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:5001",
+      "type": "string"
+    }
+  ]
+}
