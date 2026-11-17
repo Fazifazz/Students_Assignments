@@ -1,0 +1,15 @@
+[
+  {
+    "id": 101,
+    "equipmentId": 3,
+    "equipmentName": "Honda 3000W Portable Generator",
+    "customerName": "Rahul Sharma",
+    "customerEmail": "rahul.sharma@example.com",
+    "customerPhone": "9876543210",
+    "startDate": "2026-11-15",
+    "rentalDays": 4,
+    "totalCost": 4800,
+    "status": "Active",
+    "createdAt": "2026-11-15T10:30:00.000Z"
+  }
+]
