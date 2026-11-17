@@ -1,0 +1,14 @@
+{
+  "name": "readtrack-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "dev": "node --env-file=.env --watch server.js",
+    "test:api": "npx --yes newman@6.2.1 run postman/ReadTrack.postman_collection.json"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

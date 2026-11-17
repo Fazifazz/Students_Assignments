@@ -1,0 +1,202 @@
+{
+  "info": {
+    "name": "ReadTrack API",
+    "description": "End-to-end checks for the in-memory ReadTrack API. Run from an empty server state to verify CRUD and reading activity behavior.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:3000/api" },
+    { "key": "bookId", "value": "" },
+    { "key": "bookmarkId", "value": "" },
+    { "key": "wishlistId", "value": "" },
+    { "key": "deleteWishlistId", "value": "" },
+    { "key": "movedBookId", "value": "" }
+  ],
+  "item": [
+    {
+      "name": "Books",
+      "item": [
+        {
+          "name": "Create book",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\"title\":\"Postman API Test Book\",\"author\":\"ReadTrack QA\",\"genre\":\"Testing\",\"totalPages\":50,\"pagesRead\":10,\"status\":\"Reading\"}" },
+            "url": "{{baseUrl}}/books"
+          },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Book is created', function () { pm.response.to.have.status(201); });", "pm.collectionVariables.set('bookId', pm.response.json().id);"] } }]
+        },
+        {
+          "name": "Get all books",
+          "request": { "method": "GET", "url": "{{baseUrl}}/books" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Books are returned', function () { pm.response.to.have.status(200); pm.expect(pm.response.json()).to.be.an('array'); });"] } }]
+        },
+        {
+          "name": "Get one book",
+          "request": { "method": "GET", "url": "{{baseUrl}}/books/{{bookId}}" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Book details are returned', function () { pm.response.to.have.status(200); pm.expect(pm.response.json().id).to.eql(pm.collectionVariables.get('bookId')); });"] } }]
+        },
+        {
+          "name": "Update book",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\"title\":\"Postman API Test Book\",\"author\":\"ReadTrack QA Updated\",\"genre\":\"Testing\",\"totalPages\":50,\"pagesRead\":10,\"status\":\"Reading\",\"description\":\"Updated through Postman.\"}" },
+            "url": "{{baseUrl}}/books/{{bookId}}"
+          },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Book details are updated', function () { pm.response.to.have.status(200); pm.expect(pm.response.json().author).to.eql('ReadTrack QA Updated'); });"] } }]
+        },
+        {
+          "name": "Increase progress — logs only new pages",
+          "request": { "method": "PATCH", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{\"pagesRead\":20}" }, "url": "{{baseUrl}}/books/{{bookId}}/progress" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Only the newly read pages are logged', function () { pm.response.to.have.status(200); pm.expect(pm.response.json().activity.pages).to.eql(10); });"] } }]
+        },
+        {
+          "name": "Decrease progress — no negative activity",
+          "request": { "method": "PATCH", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{\"pagesRead\":15}" }, "url": "{{baseUrl}}/books/{{bookId}}/progress" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('A correction does not create reading activity', function () { pm.response.to.have.status(200); pm.expect(pm.response.json().activity).to.eql(null); });"] } }]
+        },
+        {
+          "name": "Revisit previous progress — no duplicate activity",
+          "request": { "method": "PATCH", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{\"pagesRead\":20}" }, "url": "{{baseUrl}}/books/{{bookId}}/progress" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Previously counted pages are not counted again', function () { pm.response.to.have.status(200); pm.expect(pm.response.json().activity).to.eql(null); });"] } }]
+        },
+        {
+          "name": "Toggle favourite",
+          "request": { "method": "PATCH", "url": "{{baseUrl}}/books/{{bookId}}/favourite" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Favourite is toggled', function () { pm.response.to.have.status(200); pm.expect(pm.response.json().isFavorite).to.eql(true); });"] } }]
+        },
+        {
+          "name": "Reject invalid book ID",
+          "request": { "method": "GET", "url": "{{baseUrl}}/books/invalid%21id" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Malformed IDs return 400', function () { pm.response.to.have.status(400); });"] } }]
+        },
+        {
+          "name": "Reject missing book",
+          "request": { "method": "GET", "url": "{{baseUrl}}/books/missing-book-id" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Unknown books return 404', function () { pm.response.to.have.status(404); });"] } }]
+        }
+      ]
+    },
+    {
+      "name": "Bookmarks",
+      "item": [
+        {
+          "name": "Add bookmark",
+          "request": { "method": "POST", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{\"page\":45,\"note\":\"Added from Postman.\"}" }, "url": "{{baseUrl}}/books/{{bookId}}/bookmarks" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Bookmark is created', function () { pm.response.to.have.status(201); });", "pm.collectionVariables.set('bookmarkId', pm.response.json().id);"] } }]
+        },
+        {
+          "name": "Get bookmarks for a book",
+          "request": { "method": "GET", "url": "{{baseUrl}}/books/{{bookId}}/bookmarks" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Book bookmarks are returned', function () { pm.response.to.have.status(200); pm.expect(pm.response.json()).to.be.an('array'); });"] } }]
+        },
+        {
+          "name": "Get all bookmarks",
+          "request": { "method": "GET", "url": "{{baseUrl}}/bookmarks" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('All bookmarks are returned', function () { pm.response.to.have.status(200); pm.expect(pm.response.json()).to.be.an('array'); });"] } }]
+        },
+        {
+          "name": "Update bookmark",
+          "request": { "method": "PUT", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{\"page\":46,\"note\":\"Updated from Postman.\"}" }, "url": "{{baseUrl}}/books/{{bookId}}/bookmarks/{{bookmarkId}}" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Bookmark is updated', function () { pm.response.to.have.status(200); pm.expect(pm.response.json().page).to.eql(46); });"] } }]
+        },
+        {
+          "name": "Reject bookmark beyond total pages",
+          "request": { "method": "POST", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{\"page\":51}" }, "url": "{{baseUrl}}/books/{{bookId}}/bookmarks" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Out-of-range pages return 400', function () { pm.response.to.have.status(400); });"] } }]
+        },
+        {
+          "name": "Delete bookmark",
+          "request": { "method": "DELETE", "url": "{{baseUrl}}/books/{{bookId}}/bookmarks/{{bookmarkId}}" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Bookmark is deleted', function () { pm.response.to.have.status(204); });"] } }]
+        }
+      ]
+    },
+    {
+      "name": "Wishlist",
+      "item": [
+        {
+          "name": "Add wishlist book",
+          "request": { "method": "POST", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{\"title\":\"Postman Wishlist Test\",\"author\":\"ReadTrack QA\",\"genre\":\"Testing\"}" }, "url": "{{baseUrl}}/wishlist" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Wishlist item is created', function () { pm.response.to.have.status(201); });", "pm.collectionVariables.set('wishlistId', pm.response.json().id);"] } }]
+        },
+        {
+          "name": "Reject duplicate wishlist book",
+          "request": { "method": "POST", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{\"title\":\"Postman Wishlist Test\",\"author\":\"ReadTrack QA\",\"genre\":\"Testing\"}" }, "url": "{{baseUrl}}/wishlist" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Duplicate wishlist item returns 409', function () { pm.response.to.have.status(409); });"] } }]
+        },
+        {
+          "name": "Get wishlist",
+          "request": { "method": "GET", "url": "{{baseUrl}}/wishlist" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Wishlist is returned', function () { pm.response.to.have.status(200); pm.expect(pm.response.json()).to.be.an('array'); });"] } }]
+        },
+        {
+          "name": "Move wishlist book to library",
+          "request": { "method": "POST", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{\"totalPages\":212}" }, "url": "{{baseUrl}}/wishlist/{{wishlistId}}/move-to-library" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Wishlist item is moved to the library', function () { pm.response.to.have.status(201); pm.expect(pm.response.json().status).to.eql('Want to Read'); });", "pm.collectionVariables.set('movedBookId', pm.response.json().id);"] } }]
+        },
+        {
+          "name": "Create temporary wishlist item for delete",
+          "request": { "method": "POST", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{\"title\":\"Delete Wishlist Test\",\"author\":\"ReadTrack QA\",\"genre\":\"Testing\"}" }, "url": "{{baseUrl}}/wishlist" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Second wishlist item is created', function () { pm.response.to.have.status(201); });", "pm.collectionVariables.set('deleteWishlistId', pm.response.json().id);"] } }]
+        },
+        {
+          "name": "Delete wishlist item",
+          "request": { "method": "DELETE", "url": "{{baseUrl}}/wishlist/{{deleteWishlistId}}" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Wishlist item is deleted', function () { pm.response.to.have.status(204); });"] } }]
+        }
+      ]
+    },
+    {
+      "name": "Goals and reading activities",
+      "item": [
+        {
+          "name": "Get current goal",
+          "request": { "method": "GET", "url": "{{baseUrl}}/goals" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Current goal is returned', function () { pm.response.to.have.status(200); pm.expect(pm.response.json().dailyTarget).to.be.a('number'); });"] } }]
+        },
+        {
+          "name": "Set daily target",
+          "request": { "method": "PUT", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{\"dailyTarget\":35}" }, "url": "{{baseUrl}}/goals" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Daily target is updated', function () { pm.response.to.have.status(200); pm.expect(pm.response.json().dailyTarget).to.eql(35); });"] } }]
+        },
+        {
+          "name": "Get daily progress",
+          "request": { "method": "GET", "url": "{{baseUrl}}/goals/progress" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Goal progress is calculated from activities', function () { pm.response.to.have.status(200); pm.expect(pm.response.json().dailyTarget).to.eql(35); pm.expect(pm.response.json().pagesRead).to.be.at.least(34); pm.expect(pm.response.json().remainingPages).to.eql(Math.max(0, 35 - pm.response.json().pagesRead)); });"] } }]
+        },
+        {
+          "name": "Get weekly summary",
+          "request": { "method": "GET", "url": "{{baseUrl}}/goals/weekly-summary" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Weekly pages and streak are returned', function () { pm.response.to.have.status(200); pm.expect(pm.response.json().days).to.have.length(7); pm.expect(pm.response.json().streak).to.be.a('number'); });"] } }]
+        },
+        {
+          "name": "Get reading activities",
+          "request": { "method": "GET", "url": "{{baseUrl}}/activities" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Reading activity history is returned', function () { pm.response.to.have.status(200); pm.expect(pm.response.json()).to.be.an('array'); });"] } }]
+        },
+        {
+          "name": "Restore default daily target",
+          "request": { "method": "PUT", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{\"dailyTarget\":30}" }, "url": "{{baseUrl}}/goals" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Daily target can be reset', function () { pm.response.to.have.status(200); pm.expect(pm.response.json().dailyTarget).to.eql(30); });"] } }]
+        }
+      ]
+    },
+    {
+      "name": "Cleanup",
+      "item": [
+        {
+          "name": "Delete moved test book",
+          "request": { "method": "DELETE", "url": "{{baseUrl}}/books/{{movedBookId}}" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Moved test book is deleted', function () { pm.response.to.have.status(204); });"] } }]
+        },
+        {
+          "name": "Delete test book",
+          "request": { "method": "DELETE", "url": "{{baseUrl}}/books/{{bookId}}" },
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": ["pm.test('Test book is deleted', function () { pm.response.to.have.status(204); });"] } }]
+        }
+      ]
+    }
+  ]
+}

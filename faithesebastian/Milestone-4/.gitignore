@@ -1,0 +1,6 @@
+node_modules/
+frontend/dist/
+.env
+npm-debug.log*
+backend/data/orders.json
+backend/data/*.tmp
