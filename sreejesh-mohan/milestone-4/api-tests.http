@@ -1,0 +1,64 @@
+### Variables
+@baseUrl = http://localhost:5001/api
+
+### 1. Root Health Check
+GET http://localhost:5001/
+
+### 2. GET All Equipment Fleet
+GET {{baseUrl}}/equipment
+
+### 3. GET Equipment with Filters (Search & Category)
+GET {{baseUrl}}/equipment?category=Power Tools&search=drill
+
+### 4. GET Equipment Categories
+GET {{baseUrl}}/equipment/categories
+
+### 5. GET Single Equipment by ID
+GET {{baseUrl}}/equipment/1
+
+### 6. GET Single Equipment - 404 Test
+GET {{baseUrl}}/equipment/999
+
+### 7. POST Create New Equipment
+POST {{baseUrl}}/equipment
+Content-Type: application/json
+
+{
+  "name": "CAT 301.5 Mini Excavator",
+  "category": "Heavy Machinery",
+  "dailyRate": 3500,
+  "description": "Compact mini hydraulic excavator for earthmoving and landscaping projects.",
+  "serialNumber": "CAT-MINI-091",
+  "location": "Yard North 2",
+  "image": "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=600&q=80"
+}
+
+### 8. PUT Update Equipment Status
+PUT {{baseUrl}}/equipment/3/status
+Content-Type: application/json
+
+{
+  "status": "Available"
+}
+
+### 9. DELETE Equipment by ID
+DELETE {{baseUrl}}/equipment/6
+
+### 10. GET All Active & Past Rentals
+GET {{baseUrl}}/rentals
+
+### 11. POST Create New Rental Booking
+POST {{baseUrl}}/rentals
+Content-Type: application/json
+
+{
+  "equipmentId": 1,
+  "customerName": "Sreejesh Mohan",
+  "customerEmail": "sreejesh@example.com",
+  "customerPhone": "9876543210",
+  "startDate": "2026-11-20",
+  "rentalDays": 3
+}
+
+### 12. PUT Mark Rental as Returned
+PUT {{baseUrl}}/rentals/101/return
